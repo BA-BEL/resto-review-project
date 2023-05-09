@@ -1,0 +1,501 @@
+Id,vader_neg,vader_neu,vader_pos,vader_compound,roberta_neg,roberta_neu,roberta_pos,Review,Liked,sentiment,Cuisine,Restaurant_id
+0,0,0.435,0.565,0.5994,0.002303252,0.010709432,0.986987352,Wow... Loved this place.,1,5 stars,Italian,0
+1,0.445,0.555,0,-0.3412,0.964183331,0.032227986,0.00358859,Crust is not good.,0,2 stars,Italian,0
+2,0.34,0.66,0,-0.5574,0.977226377,0.019545497,0.003228184,Not tasty and the texture was just nasty.,0,2 stars,Italian,0
+3,0.093,0.585,0.322,0.6908,0.002214626,0.029860757,0.967924654,Stopped by during the late May bank holiday off Rick Steve recommendation and loved it.,1,5 stars,Italian,0
+4,0,0.728,0.272,0.6249,0.002389198,0.016415497,0.981195331,The selection on the menu was great and so were the prices.,1,5 stars,Italian,0
+5,0.451,0.451,0.098,-0.6908,0.975816131,0.021742886,0.002441024,Now I am getting angry and I want my damn pho.,0,5 stars,Chinese,1
+6,0,1,0,0,0.769338906,0.213488325,0.017172795,Honeslty it didn't taste THAT fresh.),0,2 stars,Chinese,1
+7,0,0.802,0.198,0.5719,0.228632987,0.704014719,0.06735231,The potatoes were like rubber and you could tell they had been made up ahead of time being kept under a warmer.,0,3 stars,Chinese,1
+8,0,0.494,0.506,0.6249,0.002494062,0.02574756,0.971758366,The fries were great too.,1,5 stars,Chinese,1
+9,0,0.196,0.804,0.6249,0.006675696,0.113917612,0.87940675,A great touch.,1,5 stars,Chinese,1
+10,0,1,0,0,0.008721443,0.1567121,0.834566474,Service was very prompt.,1,5 stars,Chinese,1
+11,0,1,0,0,0.273409784,0.563170969,0.163419247,Would not go back.,0,1 star,Indian,2
+12,0.094,0.769,0.137,0.25,0.949936688,0.045759872,0.004303345,The cashier had no care what so ever on what I had to say it still ended up being wayyy overpriced.,0,1 star,Indian,2
+13,0,1,0,0,0.006251096,0.319417089,0.674331784,"I tried the Cape Cod ravoli, chicken, with cranberry...mmmm!",1,1 star,Italian,3
+14,0.214,0.44,0.346,0.2732,0.925675273,0.069734648,0.004590109,I was disgusted because I was pretty sure that was human hair.,0,2 stars,Indian,4
+15,0.429,0.571,0,-0.5423,0.621610761,0.359590471,0.018798823,I was shocked because no signs indicate cash only.,0,1 star,Indian,4
+16,0,0.323,0.677,0.2716,0.005102564,0.093170837,0.901726663,Highly recommended.,1,5 stars,Indian,4
+17,0,1,0,0,0.852734208,0.141009301,0.006256528,Waitress was a little slow in service.,0,3 stars,Indian,4
+18,0.314,0.686,0,-0.3952,0.97225374,0.025094535,0.00265167,"This place is not worth your time, let alone Vegas.",0,1 star,Mexican,5
+19,0.345,0.655,0,-0.2755,0.950729847,0.044627875,0.004642229,did not like at all.,0,1 star,Mexican,5
+20,0.458,0.542,0,-0.1759,0.050132934,0.742647827,0.207219183,The Burrittos Blah!,0,1 star,Mexican,5
+21,0,0.345,0.655,0.5859,0.004061041,0.038574651,0.957364321,"The food, amazing.",1,5 stars,Mexican,5
+22,0,0.5,0.5,0.4588,0.003752587,0.072473012,0.923774421,Service is also cute.,1,4 stars,Mexican,5
+23,0,0.458,0.542,0.7964,0.042909347,0.084049836,0.873040855,I could care less... The interior is just beautiful.,1,3 stars,Japanese,6
+24,0,1,0,0,0.048429746,0.738237202,0.21333304,So they performed.,1,3 stars,Japanese,6
+25,0,0.706,0.294,0.5777,0.00189686,0.007569675,0.990533471,That's right....the red velvet cake.....ohhh this stuff is so good.,1,3 stars,Japanese,6
+26,0,1,0,0,0.636506557,0.346426189,0.017067302,#NAME?,0,1 star,Japanese,6
+27,0,0.601,0.399,0.8074,0.018957864,0.148849443,0.832192719,"This hole in the wall has great Mexican street tacos, and friendly staff.",1,5 stars,Mexican,7
+28,0,0.796,0.204,0.5984,0.428592473,0.474970728,0.096436843,"Took an hour to get our food only 4 tables in restaurant my food was Luke warm, Our sever was running around like he was totally overwhelmed.",0,2 stars,Mexican,7
+29,0.451,0.549,0,-0.6249,0.950298369,0.04619918,0.003502364,The worst was the salmon sashimi.,0,1 star,Mexican,7
+30,0,0.848,0.152,0.3612,0.001441874,0.03853469,0.960023463,"Also there are combos like a burger, fries, and beer for 23 which is a decent deal.",1,4 stars,Mexican,7
+31,0,0.642,0.358,0.4199,0.724338531,0.240568236,0.035093244,This was like the final blow!,0,5 stars,Mexican,7
+32,0.423,0.577,0,-0.7074,0.014017392,0.048927262,0.937055409,I found this place by accident and I could not be happier.,1,5 stars,Mexican,7
+33,0,0.701,0.299,0.7391,0.055550016,0.362168849,0.582281113,"seems like a good quick place to grab a bite of some familiar pub food, but do yourself a favor and look elsewhere.",0,4 stars,Mexican,7
+34,0,0.615,0.385,0.3612,0.001633681,0.018868145,0.979498148,"Overall, I like this place a lot.",1,4 stars,Mexican,7
+35,0,1,0,0,0.005441534,0.060454819,0.934103668,The only redeeming quality of the restaurant was that it was very inexpensive.,1,3 stars,Mexican,7
+36,0,0.58,0.42,0.4404,0.00458699,0.12463893,0.870774031,Ample portions and good prices.,1,5 stars,Mexican,7
+37,0.283,0.609,0.109,-0.6124,0.972313881,0.02491273,0.00277333,"Poor service, the waiter made me feel like I was stupid every time he came to the table.",0,1 star,Mexican,7
+38,0,0.589,0.411,0.636,0.00121444,0.010540267,0.988245368,My first visit to Hiro was a delight!,1,5 stars,Mexican,7
+39,0.714,0.286,0,-0.3612,0.956176937,0.035867196,0.007955909,Service sucks.,0,1 star,Mexican,7
+40,0,1,0,0,0.015094514,0.717328906,0.267576486,The shrimp tender and moist.,1,4 stars,Mexican,7
+41,0.264,0.736,0,-0.5116,0.88742131,0.105601937,0.006976764,There is not a deal good enough that would drag me into that establishment again.,0,2 stars,Mexican,7
+42,0.297,0.621,0.082,-0.683,0.94850105,0.048818652,0.002680367,Hard to judge whether these sides were good because we were grossed out by the melted styrofoam and didn't want to eat it for fear of getting sick.,0,2 stars,Mexican,7
+43,0,0.565,0.435,0.8271,0.001553822,0.01376098,0.984685183,"On a positive note, our server was very attentive and provided great service.",1,5 stars,Mexican,7
+44,0.421,0.579,0,-0.8402,0.974965811,0.022007151,0.003027019,"Frozen pucks of disgust, with some of the worst people behind the register.",0,1 star,Mexican,7
+45,0,0.815,0.185,0.3612,0.01441441,0.215992704,0.769592881,The only thing I did like was the prime rib and dessert section.,1,4 stars,Mexican,7
+46,0.5,0.5,0,-0.79,0.98000735,0.017600624,0.002391981,It's too bad the food is so damn generic.,0,2 stars,Mexican,7
+47,0,0.707,0.293,0.4404,0.005118637,0.069986232,0.924895108,"The burger is good beef, cooked just right.",1,5 stars,Mexican,7
+48,0,0.764,0.236,0.3544,0.037420783,0.504814088,0.457765132,If you want a sandwich just go to any Firehouse!!!!!,1,1 star,Mexican,7
+49,0.159,0.841,0,-0.5267,0.001102323,0.010739305,0.988158405,"My side Greek salad with the Greek dressing was so tasty, and the pita and hummus was very refreshing.",1,5 stars,Mexican,7
+50,0,0.872,0.128,0.4215,0.002222148,0.147027686,0.850750208,We ordered the duck rare and it was pink and tender on the inside with a nice char on the outside.,1,5 stars,Mexican,7
+51,0,1,0,0,0.289310604,0.65145427,0.059235066,He came running after us when he realized my husband had left his sunglasses on the table.,1,2 stars,Mexican,7
+52,0,0.554,0.446,0.6166,0.001507899,0.009673032,0.988819063,Their chow mein is so good!,1,5 stars,Mexican,7
+53,0.277,0.723,0,-0.7293,0.971367121,0.026800491,0.001832402,"They have horrible attitudes towards customers, and talk down to each one when customers don't enjoy their food.",0,1 star,Mexican,7
+54,0,0.536,0.464,0.3802,0.005120288,0.093788423,0.901091218,The portion was huge!,1,2 stars,Mexican,7
+55,0,0.339,0.661,0.9136,0.00185356,0.008357218,0.989789188,"Loved it...friendly servers, great food, wonderful and imaginative menu.",1,5 stars,Mexican,7
+56,0.186,0.719,0.095,-0.3657,0.854335666,0.130773619,0.014890673,The Heart Attack Grill in downtown Vegas is an absolutely flat-lined excuse for a restaurant.,0,1 star,Mexican,7
+57,0,0.8,0.2,0.3612,0.207323343,0.750164747,0.042511847,Not much seafood and like 5 strings of pasta at the bottom.,0,2 stars,Mexican,7
+58,0,0.811,0.189,0.6369,0.010448541,0.233981743,0.755569696,"The salad had just the right amount of sauce to not over power the scallop, which was perfectly cooked.",1,5 stars,Mexican,7
+59,0.322,0.678,0,-0.6956,0.964354932,0.033585176,0.002059918,"The ripped banana was not only ripped, but petrified and tasteless.",0,1 star,Mexican,7
+60,0.133,0.867,0,-0.3182,0.455509126,0.494217575,0.050273266,At least think to refill my water before I struggle to wave you over for 10 minutes.,0,2 stars,Mexican,7
+61,0,1,0,0,0.002098076,0.054797903,0.943103969,This place receives stars for their APPETIZERS!!!,1,4 stars,Mexican,7
+62,0,0.619,0.381,0.5719,0.002085308,0.033958312,0.963956416,The cocktails are all handmade and delicious.,1,5 stars,Mexican,7
+63,0,0.649,0.351,0.4019,0.001957809,0.133149192,0.86489296,We'd definitely go back here again.,1,5 stars,Mexican,7
+64,0,0.644,0.356,0.5949,0.001315626,0.011963778,0.986720562,We are so glad we found this place.,1,5 stars,Mexican,7
+65,0,0.584,0.416,0.7506,0.004666958,0.035026118,0.960306883,"Great food and service, huge portions and they give a military discount.",1,5 stars,Mexican,7
+66,0,0.532,0.468,0.6588,0.001436957,0.012353631,0.986209333,Always a great time at Dos Gringos!,1,5 stars,Mexican,7
+67,0,0.743,0.257,0.5859,0.003616072,0.025992811,0.970391095,Update.....went back for a second time and it was still just as amazing,1,1 star,Mexican,7
+68,0,1,0,0,0.771197319,0.217670351,0.011132243,We got the food and apparently they have never heard of salt and the batter on the fish was chewy.,0,2 stars,Mexican,7
+69,0,0.268,0.732,0.8481,0.003064879,0.027083149,0.96985203,A great way to finish a great.,1,5 stars,Mexican,7
+70,0,1,0,0,0.014510773,0.315865755,0.669623494,"The deal included 5 tastings and 2 drinks, and Jeff went above and beyond what we expected.",1,5 stars,Mexican,7
+71,0,0.633,0.367,0.5379,0.00262768,0.053395312,0.943976998,#NAME?,1,5 stars,Mexican,7
+72,0.302,0.698,0,-0.0772,0.863052487,0.123427674,0.013519719,The service was meh.,0,3 stars,Mexican,7
+73,0,1,0,0,0.657323837,0.311419129,0.031256948,"It took over 30 min to get their milkshake, which was nothing more than chocolate milk.",0,1 star,Mexican,7
+74,0.085,0.915,0,-0.2382,0.933920145,0.060810495,0.005269337,"I guess I should have known that this place would suck, because it is inside of the Excalibur, but I didn't use my common sense.",0,2 stars,Mexican,7
+75,0.192,0.481,0.327,0.2431,0.965217054,0.032562498,0.002220334,The scallop dish is quite appalling for value as well.,0,3 stars,Mexican,7
+76,0.505,0.495,0,-0.623,0.928349614,0.06302394,0.008626498,2 times - Very Bad Customer Service !,0,1 star,Mexican,7
+77,0,0.458,0.542,0.807,0.001522462,0.015413568,0.983063996,The sweet potato fries were very good and seasoned well.,1,5 stars,Mexican,7
+78,0,0.697,0.303,0.7269,0.00098797,0.01013751,0.988874555,Today is the second time I've been to their lunch buffet and it was pretty good.,1,4 stars,Mexican,7
+79,0.2,0.6,0.199,-0.0056,0.292623281,0.332360774,0.375015914,There is so much good food in Vegas that I feel cheated for wasting an eating opportunity by going to Rice and Company.,0,2 stars,Mexican,7
+80,0,0.794,0.206,0.6369,0.864183247,0.125781506,0.010035299,Coming here is like experiencing an underwhelming relationship where both parties can't wait for the other person to ask to break up.,0,4 stars,Mexican,7
+81,0.122,0.745,0.133,0.0516,0.84570986,0.146333739,0.007956465,walked in and the place smelled like an old grease trap and only 2 others there eating.,0,1 star,Mexican,7
+82,0,1,0,0,0.892262161,0.102123342,0.005614483,The turkey and roast beef were bland.,0,2 stars,Mexican,7
+83,0,1,0,0,0.005602231,0.08188843,0.912509322,This place has it!,1,5 stars,Mexican,7
+84,0.174,0.72,0.106,-0.3818,0.884959936,0.106252432,0.008787558,The pan cakes everyone are raving about taste like a sugary disaster tailored to the palate of a six year old.,0,5 stars,Mexican,7
+85,0,0.583,0.417,0.8613,0.002197811,0.008072386,0.989729762,I love the Pho and the spring rolls oh so yummy you have to try.,1,5 stars,Mexican,7
+86,0.211,0.68,0.109,-0.3612,0.969913483,0.028288316,0.001798108,The poor batter to meat ratio made the chicken tenders very unsatisfying.,0,2 stars,Italian,8
+87,0,0.631,0.369,0.6884,0.003318651,0.01211711,0.984564185,All I have to say is the food was amazing!!!,1,5 stars,Italian,8
+88,0.512,0.488,0,-0.636,0.052351221,0.201043367,0.746605456,Omelets are to die for!,1,1 star,Italian,8
+89,0,0.323,0.677,0.7424,0.001736843,0.013680016,0.984583139,Everything was fresh and delicious!,1,5 stars,Italian,8
+90,0.314,0.686,0,-0.4939,0.973507941,0.024361998,0.002129975,"In summary, this was a largely disappointing dining experience.",0,2 stars,Italian,8
+91,0.075,0.446,0.479,0.8945,0.041856617,0.238143802,0.719999552,"It's like a really sexy party in your mouth, where you're outrageously flirting with the hottest person at the party.",1,4 stars,Italian,8
+92,0,0.898,0.102,0.1501,0.688596189,0.254986078,0.056417812,"Never been to Hard Rock Casino before, WILL NEVER EVER STEP FORWARD IN IT AGAIN!",0,5 stars,Italian,8
+93,0,0.283,0.717,0.7249,0.00188459,0.024762955,0.973352432,Best breakfast buffet!!!,1,5 stars,Italian,8
+94,0,1,0,0,0.470748007,0.461286128,0.067965843,say bye bye to your tip lady!,0,5 stars,Italian,8
+95,0,1,0,0,0.670045197,0.302024513,0.027930269,We'll never go again.,0,5 stars,Italian,8
+96,0,1,0,0,0.002500272,0.238155022,0.759344697,Will be back again!,1,5 stars,Italian,8
+97,0,1,0,0,0.001563756,0.08605317,0.91238308,Food arrived quickly!,1,5 stars,Italian,8
+98,0.445,0.555,0,-0.3412,0.965457261,0.030455401,0.004087413,It was not good.,0,1 star,Italian,8
+99,0,0.738,0.262,0.4927,0.001624157,0.018767238,0.979608595,"On the up side, their cafe serves really good food.",1,4 stars,Italian,8
+100,0,0.774,0.226,0.8221,0.001236229,0.018112803,0.980650961,"Our server was fantastic and when he found out the wife loves roasted garlic and bone marrow, he added extra to our meal and another marrow to go!",1,5 stars,Italian,8
+101,0,0.715,0.285,0.7178,0.003782786,0.037069254,0.95914793,"The only good thing was our waiter, he was very helpful and kept the bloddy mary's coming.",1,4 stars,Italian,8
+102,0,0.704,0.296,0.6369,0.008591497,0.052302629,0.939105868,"Best Buffet in town, for the price you cannot beat it.",1,5 stars,Italian,8
+103,0,0.658,0.342,0.8531,0.001961047,0.008370987,0.989668012,"I LOVED their mussels cooked in this wine reduction, the duck was tender, and their potato dishes were delicious.",1,5 stars,Italian,8
+104,0,0.775,0.225,0.4404,0.001408833,0.014707551,0.98388356,This is one of the better buffets that I have been to.,1,5 stars,Italian,8
+105,0,0.673,0.327,0.5983,0.001362782,0.011303801,0.987333417,So we went to Tigerlilly and had a fantastic afternoon!,1,5 stars,Italian,8
+106,0,0.616,0.384,0.8439,0.00137947,0.006956105,0.99166441,"The food was delicious, our bartender was attentive and personable AND we got a great deal!",1,5 stars,Italian,8
+107,0,0.56,0.44,0.6705,0.001440588,0.010578074,0.987981379,The ambience is wonderful and there is music playing.,1,5 stars,Italian,8
+108,0,1,0,0,0.005793521,0.724638522,0.269567996,Will go back next trip out.,1,3 stars,Japanese,9
+109,0,0.223,0.777,0.5399,0.001685751,0.009245273,0.989069045,Sooooo good!!,1,4 stars,Japanese,9
+110,0.141,0.468,0.392,0.6479,0.857922196,0.131823212,0.010254518,"REAL sushi lovers, let's be honest - Yama is not that good.",0,3 stars,Japanese,9
+111,0,1,0,0,0.05216847,0.716383338,0.231448203,"At least 40min passed in between us ordering and the food arriving, and it wasn't that busy.",0,2 stars,Japanese,9
+112,0,0.485,0.515,0.8173,0.001093149,0.00948882,0.989418089,This is a really fantastic Thai restaurant which is definitely worth a visit.,1,5 stars,Japanese,9
+113,0,0.517,0.483,0.4215,0.014224852,0.247314468,0.73846066,"Nice, spicy and tender.",1,5 stars,Japanese,9
+114,0,0.256,0.744,0.4404,0.012655889,0.154292032,0.833052099,Good prices.,1,4 stars,Japanese,9
+115,0,1,0,0,0.090924084,0.813451827,0.095624045,Check it out.,1,3 stars,Japanese,9
+116,0.361,0.233,0.406,0.1007,0.957835436,0.03410542,0.008059182,It was pretty gross!,0,3 stars,Japanese,9
+117,0,0.508,0.492,0.4404,0.048308656,0.339222431,0.612468958,I've had better atmosphere.,0,2 stars,Japanese,9
+118,0.269,0.731,0,-0.2382,0.549791574,0.394338548,0.055869885,Kind of hard to mess up a steak but they did.,0,3 stars,Japanese,9
+119,0.15,0.705,0.145,-0.0314,0.569221795,0.309344709,0.121433437,"Although I very much liked the look and sound of this place, the actual experience was a bit disappointing.",0,3 stars,Japanese,9
+120,0,1,0,0,0.966227114,0.031272039,0.002500868,I just don't know how this place managed to served the blandest food I have ever eaten when they are preparing Indian cuisine.,0,2 stars,Japanese,9
+121,0.385,0.615,0,-0.7391,0.905527234,0.085277855,0.009194856,"Worst service to boot, but that is the least of their worries.",0,1 star,Japanese,9
+122,0,0.545,0.455,0.6124,0.004640999,0.067149758,0.928209186,Service was fine and the waitress was friendly.,1,4 stars,Japanese,9
+123,0.099,0.604,0.297,0.8481,0.009137273,0.103261255,0.887601495,"The guys all had steaks, and our steak loving son who has had steak at the best and worst places said it was the best steak he's ever eaten.",1,5 stars,Japanese,9
+124,0,0.911,0.089,0.2382,0.002995494,0.077565834,0.91943866,"We thought you'd have to venture further away to get good sushi, but this place really hit the spot that night.",1,5 stars,Japanese,9
+125,0.448,0.372,0.18,-0.6514,0.905471444,0.075435676,0.019092852,"Host staff were, for lack of a better word, BITCHES!",0,2 stars,Japanese,9
+126,0.284,0.59,0.126,-0.5496,0.93572104,0.059409209,0.004869744,Bland... Not a liking this place for a number of reasons and I don't want to waste time on bad reviewing.. I'll leave it at that...,0,2 stars,Japanese,9
+127,0,1,0,0,0.003690237,0.171820134,0.824489594,"Phenomenal food, service and ambiance.",1,5 stars,Japanese,9
+128,0,1,0,0,0.484488368,0.482224584,0.033287086,I wouldn't return.,0,1 star,Japanese,9
+129,0,0.765,0.235,0.5574,0.002578696,0.125433981,0.871987343,"Definitely worth venturing off the strip for the pork belly, will return next time I'm in Vegas.",1,5 stars,Japanese,9
+130,0,1,0,0,0.979972303,0.017359467,0.002668261,This place is way too overpriced for mediocre food.,0,2 stars,Japanese,9
+131,0,0.334,0.666,0.6114,0.00270199,0.037914734,0.959383309,Penne vodka excellent!,1,5 stars,Japanese,9
+132,0,0.868,0.132,0.4404,0.00132975,0.021207171,0.977463126,"They have a good selection of food including a massive meatloaf sandwich, a crispy chicken wrap, a delish tuna melt and some tasty burgers.",1,4 stars,Japanese,9
+133,0.5,0.5,0,-0.4588,0.958286703,0.037778731,0.003934508,The management is rude.,0,1 star,Japanese,9
+134,0,0.625,0.375,0.765,0.001342462,0.025284998,0.973372519,"Delicious NYC bagels, good selections of cream cheese, real Lox with capers even.",1,5 stars,Japanese,9
+135,0,0.684,0.316,0.8334,0.00599792,0.019424297,0.974577785,"Great Subway, in fact it's so good when you come here every other Subway will not meet your expectations.",1,5 stars,Japanese,9
+136,0.27,0.476,0.254,-0.0258,0.001915141,0.052916043,0.945168853,I had a seriously solid breakfast here.,1,2 stars,Japanese,9
+137,0,0.704,0.296,0.6369,0.001369146,0.012553069,0.986077785,This is one of the best bars with food in Vegas.,1,5 stars,Japanese,9
+138,0.124,0.717,0.159,0.228,0.456253916,0.36215201,0.181594074,"He was extremely rude and really, there are so many other restaurants I would love to dine at during a weekend in Vegas.",0,1 star,Japanese,9
+139,0,0.648,0.352,0.7171,0.002550516,0.022550413,0.974899113,My drink was never empty and he made some really great menu suggestions.,1,5 stars,Japanese,9
+140,0,1,0,0,0.778418303,0.19144845,0.030133201,Don't do it!!!!,0,1 star,Japanese,9
+141,0.355,0.645,0,-0.6072,0.959980726,0.037751518,0.00226779,The waiter wasn't helpful or friendly and rarely checked on us.,0,2 stars,Japanese,9
+142,0.195,0.805,0,-0.5256,0.976327717,0.021778496,0.00189375,My husband and I ate lunch here and were very disappointed with the food and service.,0,2 stars,Japanese,9
+143,0,1,0,0,0.957555771,0.039964002,0.002480279,And the red curry had so much bamboo shoots and wasn't very tasty to me.,0,2 stars,Japanese,9
+144,0,0.696,0.304,0.6757,0.619996548,0.330294639,0.049708791,Nice blanket of moz over top but i feel like this was done to cover up the subpar food.,1,4 stars,Japanese,9
+145,0,0.652,0.348,0.5859,0.002234685,0.042528063,0.955237269,The bathrooms are clean and the place itself is well decorated.,1,5 stars,Japanese,9
+146,0,1,0,0,0.949371338,0.046966739,0.003662012,"The menu is always changing, food quality is going down & service is extremely slow.",0,2 stars,Japanese,9
+147,0,1,0,0,0.658949375,0.319051832,0.021998851,"The service was a little slow , considering that were served by 3 people servers so the food was coming in a slow pace.",0,3 stars,Japanese,9
+148,0,1,0,0,0.752043188,0.22519283,0.022763994,I give it 2 thumbs down,0,2 stars,Japanese,9
+149,0.245,0.755,0,-0.4404,0.62366271,0.349855006,0.026482267,We watched our waiter pay a lot more attention to other tables and ignore us.,0,2 stars,Japanese,9
+150,0,0.89,0.11,0.2732,0.001434152,0.187075585,0.811490238,My fiancé and I came in the middle of the day and we were greeted and seated right away.,1,5 stars,Japanese,9
+151,0,0.631,0.369,0.6249,0.001076268,0.014998504,0.983925223,This is a great restaurant at the Mandalay Bay.,1,5 stars,Japanese,9
+152,0.286,0.714,0,-0.4215,0.806114435,0.185153142,0.008732457,We waited for forty five minutes in vain.,0,1 star,Japanese,9
+153,0,1,0,0,0.744267285,0.243130267,0.012602511,Crostini that came with the salad was stale.,0,2 stars,Japanese,9
+154,0,0.532,0.468,0.6588,0.001599201,0.036599785,0.961800992,Some highlights : Great quality nigiri here!,1,5 stars,Japanese,9
+155,0,0.576,0.424,0.7096,0.002651317,0.052971859,0.944376767,the staff is friendly and the joint is always clean.,1,5 stars,Japanese,9
+156,0.058,0.558,0.385,0.8689,0.002824679,0.048472404,0.948702931,this was a different cut than the piece the other day but still wonderful and tender s well as well flavored.,1,5 stars,Japanese,9
+157,0,0.733,0.267,0.807,0.001489811,0.026439874,0.972070277,I ordered the Voodoo pasta and it was the first time I'd had really excellent pasta since going gluten free several years ago.,1,5 stars,Japanese,9
+158,0,0.508,0.492,0.4404,0.00216081,0.01475434,0.983084857,this place is good.,1,4 stars,Japanese,9
+159,0.138,0.862,0,-0.34,0.88350594,0.10922806,0.007265975,"Unfortunately, we must have hit the bakery on leftover day because everything we ordered was STALE.",0,2 stars,Japanese,9
+160,0.221,0.779,0,-0.3724,0.899614453,0.09481173,0.005573855,I came back today since they relocated and still not impressed.,0,2 stars,Japanese,9
+161,0,1,0,0,0.022581097,0.803290546,0.174128354,I was seated immediately.,1,5 stars,Japanese,9
+162,0,1,0,0,0.003186158,0.169635013,0.827178895,"Their menu is diverse, and reasonably priced.",1,4 stars,Japanese,9
+163,0.454,0.546,0,-0.3595,0.391414791,0.522047639,0.086537577,Avoid at all cost!,0,1 star,Japanese,9
+164,0,1,0,0,0.018597394,0.423724025,0.557678521,Restaurant is always full but never a wait.,1,4 stars,Japanese,9
+165,0,0,1,0.6467,0.155937061,0.279851228,0.564211726,DELICIOUS!!,1,5 stars,Japanese,9
+166,0,0.781,0.219,0.6369,0.001437723,0.013807224,0.984755039,This place is hands-down one of the best places to eat in the Phoenix metro area.,1,5 stars,Japanese,9
+167,0,0.775,0.225,0.4404,0.428240806,0.48611334,0.085645869,So don't go there if you are looking for good food...,0,3 stars,Japanese,9
+168,0.473,0.527,0,-0.6696,0.900056541,0.089935452,0.010008089,I've never been treated so bad.,0,1 star,Japanese,9
+169,0,1,0,0,0.646538377,0.318307102,0.035154462,Bacon is hella salty.,1,3 stars,Japanese,9
+170,0.147,0.853,0,-0.4767,0.968024969,0.029182825,0.002792219,"We also ordered the spinach and avocado salad, the ingredients were sad and the dressing literally had zero taste.",0,1 star,Japanese,9
+171,0.085,0.846,0.069,-0.1027,0.283609897,0.576832235,0.139557898,"This really is how Vegas fine dining used to be, right down to the menus handed to the ladies that have no prices listed.",1,5 stars,Japanese,9
+172,0,0.534,0.466,0.5413,0.00309265,0.040920183,0.955987215,The waitresses are very friendly.,1,4 stars,Japanese,9
+173,0,0.7,0.3,0.6788,0.003670919,0.061774634,0.934554398,"Lordy, the Khao Soi is a dish that is not to be missed for curry lovers!",1,5 stars,Japanese,9
+174,0,0.634,0.366,0.8689,0.001470769,0.008065876,0.990463436,Everything on the menu is terrific and we were also thrilled that they made amazing accommodations for our vegetarian daughter.,1,5 stars,Japanese,9
+175,0.161,0.839,0,-0.5334,0.608767748,0.358326107,0.032906141,"Perhaps I caught them on an off night judging by the other reviews, but I'm not inspired to go back.",0,2 stars,Japanese,9
+176,0,0.769,0.231,0.2732,0.922975659,0.072444327,0.004580024,The service here leaves a lot to be desired.,0,3 stars,Japanese,9
+177,0,0.8,0.2,0.3612,0.002319549,0.135156438,0.862523973,"The atmosphere is modern and hip, while maintaining a touch of coziness.",1,4 stars,Japanese,9
+178,0,0.699,0.301,0.6345,0.00817183,0.315581501,0.676246643,"Not a weekly haunt, but definitely a place to come back to every once in a while.",1,4 stars,Japanese,9
+179,0.136,0.864,0,-0.296,0.733652651,0.251828969,0.014518372,We literally sat there for 20 minutes with no one asking to take our order.,0,1 star,Japanese,9
+180,0.2,0.8,0,-0.6106,0.969100237,0.027990237,0.002909569,"The burger had absolutely no flavor - the meat itself was totally bland, the burger was overcooked and there was no charcoal flavor.",0,1 star,Japanese,9
+181,0.126,0.772,0.102,-0.1531,0.923197806,0.073714562,0.0030877,I also decided not to send it back because our waitress looked like she was on the verge of having a heart attack.,0,1 star,Japanese,9
+182,0.424,0.576,0,-0.6606,0.938667297,0.054788385,0.006544381,I dressed up to be treated so rudely!,0,1 star,Indian,10
+183,0.444,0.556,0,-0.34,0.610154152,0.366948783,0.022896988,It was probably dirt.,0,2 stars,Indian,10
+184,0,0.714,0.286,0.5574,0.003552542,0.019889006,0.976558447,"Love this place, hits the spot when I want something healthy but not lacking in quantity or flavor.",1,5 stars,Indian,10
+185,0,1,0,0,0.001310841,0.021225091,0.97746402,I ordered the Lemon raspberry ice cocktail which was also incredible.,1,5 stars,Indian,10
+186,0.316,0.684,0,-0.7184,0.970828772,0.025753701,0.003417544,"The food sucked, which we expected but it sucked more than we could have imagined.",0,2 stars,Indian,10
+187,0,0.27,0.73,0.4019,0.005112399,0.062260237,0.93262732,Interesting decor.,1,4 stars,Indian,10
+188,0,0.715,0.285,0.4201,0.00575835,0.078569926,0.915671766,What I really like there is the crepe station.,1,5 stars,Indian,10
+189,0,0.776,0.224,0.6697,0.001295111,0.023818428,0.974886417,"Also were served hot bread and butter, and home made potato chips with bacon bits on top....very original and very good.",1,5 stars,Indian,10
+190,0,0.637,0.363,0.6114,0.004066098,0.133434355,0.862499475,you can watch them preparing the delicious food!),1,5 stars,Indian,10
+191,0,0.625,0.375,0.5574,0.002244628,0.015654553,0.982100785,Both of the egg rolls were fantastic.,1,5 stars,Indian,10
+192,0.196,0.804,0,-0.296,0.717865586,0.271442115,0.010692295,"When my order arrived, one of the gyros was missing.",0,1 star,Indian,10
+193,0,0.753,0.247,0.5563,0.001511125,0.054499377,0.943989515,"I had a salad with the wings, and some ice cream for dessert and left feeling quite satisfied.",1,4 stars,Indian,10
+194,0.093,0.727,0.18,0.4627,0.247643635,0.614352465,0.138003856,I'm not really sure how Joey's was voted best hot dog in the Valley by readers of Phoenix Magazine.,0,3 stars,Indian,10
+195,0,0.667,0.333,0.6696,0.001020632,0.025167998,0.973811388,The best place to go for a tasty bowl of Pho!,1,5 stars,Indian,10
+196,0,1,0,0,0.910492241,0.080387026,0.009120748,The live music on Fridays totally blows.,0,1 star,Indian,10
+197,0.252,0.503,0.245,-0.021,0.939434826,0.055799283,0.004765961,I've never been more insulted or felt disrespected.,0,1 star,Indian,10
+198,0,0.364,0.636,0.5413,0.004022749,0.066977106,0.929000199,Very friendly staff.,1,5 stars,Indian,10
+199,0,0.678,0.322,0.2263,0.008797711,0.218129575,0.77307272,It is worth the drive.,1,4 stars,Indian,10
+200,0,0.707,0.293,0.7003,0.009949543,0.073762529,0.916287959,"I had heard good things about this place, but it exceeding every hope I could have dreamed of.",1,5 stars,Indian,10
+201,0,0.614,0.386,0.6588,0.001864918,0.012961377,0.985173643,Food was great and so was the serivce!,1,5 stars,Indian,10
+202,0.315,0.419,0.265,-0.092,0.720183015,0.250320464,0.029496493,The warm beer didn't help.,0,2 stars,Indian,10
+203,0,0.328,0.672,0.6249,0.001645139,0.033736005,0.964618862,Great brunch spot.,1,5 stars,Indian,10
+204,0,0.353,0.647,0.6705,0.002694041,0.05449507,0.942810893,Service is friendly and inviting.,1,5 stars,Indian,10
+205,0,0.484,0.516,0.4927,0.001747479,0.024474347,0.973778129,Very good lunch spot.,1,5 stars,Mediterranean,11
+206,0,1,0,0,0.023145312,0.826493263,0.150361404,I've lived here since 1979 and this was the first (and last) time I've stepped foot into this place.,0,5 stars,Mediterranean,11
+207,0.617,0.383,0,-0.7034,0.97942251,0.016751239,0.003826271,The WORST EXPERIENCE EVER.,0,1 star,Mediterranean,11
+208,0,1,0,0,0.445866495,0.522348821,0.031784639,Must have been an off night at this place.,0,5 stars,Mediterranean,11
+209,0,1,0,0,0.558931649,0.330932766,0.110135607,"The sides are delish - mixed mushrooms, yukon gold puree, white corn - beateous.",1,3 stars,Mediterranean,11
+210,0,0.94,0.06,0.1655,0.267061263,0.631303847,0.101634897,"If that bug never showed up I would have given a 4 for sure, but on the other side of the wall where this bug was climbing was the kitchen.",0,1 star,Mediterranean,11
+211,0,1,0,0,0.31158933,0.611361086,0.07704962,"For about 10 minutes, we we're waiting for her salad when we realized that it wasn't coming any time soon.",0,2 stars,Mediterranean,11
+212,0,0.36,0.64,0.7964,0.002011913,0.028829647,0.969158411,My friend loved the salmon tartar.,1,5 stars,Mediterranean,11
+213,0,1,0,0,0.213539898,0.694015801,0.092444308,Won't go back.,0,1 star,Mediterranean,11
+214,0,1,0,0,0.00991168,0.119827941,0.870260417,Extremely Tasty!,1,5 stars,Mediterranean,11
+215,0,0.484,0.516,0.4926,0.002258281,0.038390804,0.959350944,Waitress was good though!,1,3 stars,Mediterranean,11
+216,0.445,0.555,0,-0.3412,0.96227771,0.033891376,0.003830976,Soggy and not good.,0,2 stars,Mediterranean,11
+217,0,0.519,0.481,0.5719,0.002045969,0.019749988,0.978204012,The Jamaican mojitos are delicious.,1,4 stars,Mediterranean,11
+218,0.192,0.808,0,-0.1695,0.702251673,0.280060172,0.017688101,Which are small and not worth the price.,0,2 stars,Mediterranean,11
+219,0,0.625,0.375,0.5574,0.013790776,0.440358222,0.545851052,#NAME?,1,5 stars,Mediterranean,11
+220,0,1,0,0,0.352416277,0.55744493,0.090138808,"The shower area is outside so you can only rinse, not take a full shower, unless you don't mind being nude for everyone to see!",0,2 stars,Mediterranean,11
+221,0,1,0,0,0.931425273,0.065298602,0.003276023,The service was a bit lacking.,0,3 stars,Mediterranean,11
+222,0,1,0,0,0.330598265,0.567137897,0.10226389,"Lobster Bisque, Bussell Sprouts, Risotto, Filet ALL needed salt and pepper..and of course there is none at the tables.",0,2 stars,Mediterranean,11
+223,0,0.856,0.144,0.4019,0.077831477,0.680158556,0.242009997,Hopefully this bodes for them going out of business and someone who can cook can come in.,0,2 stars,Mediterranean,11
+224,0.259,0.741,0,-0.5423,0.958873391,0.038160283,0.002966417,"It was either too cold, not enough flavor or just bad.",0,2 stars,Mediterranean,11
+225,0,0.506,0.494,0.5994,0.002754857,0.019562548,0.97768265,I loved the bacon wrapped dates.,1,5 stars,Mediterranean,11
+226,0,0.393,0.607,0.561,0.320744425,0.349532008,0.329723507,This is an unbelievable BARGAIN!,1,5 stars,Mediterranean,11
+227,0,0.594,0.406,0.7802,0.001179111,0.009837263,0.988983691,The folks at Otto always make us feel so welcome and special.,1,5 stars,Mediterranean,11
+228,0,1,0,0,0.617631853,0.359317631,0.023050534,"As for the ""mains,"" also uninspired.",0,2 stars,Mediterranean,11
+229,0,0.715,0.285,0.658,0.0012626,0.011591089,0.987146258,This is the place where I first had pho and it was amazing!!,1,5 stars,Japanese,12
+230,0,0.764,0.236,0.5719,0.001253739,0.010734173,0.988012075,This wonderful experience made this place a must-stop whenever we are in town again.,1,5 stars,Japanese,12
+231,0.107,0.624,0.269,0.5647,0.960950196,0.033919383,0.005130373,"If the food isn't bad enough for you, then enjoy dealing with the world's worst/annoying drunk people.",0,3 stars,Japanese,12
+232,0,0.437,0.563,0.5956,0.002699715,0.028620677,0.968679667,Very very fun chef.,1,5 stars,Japanese,12
+233,0.224,0.656,0.12,-0.2263,0.952432156,0.041643839,0.00592396,"Ordered a double cheeseburger & got a single patty that was falling apart (picture uploaded) Yeah, still sucks.",0,1 star,Japanese,12
+234,0,0.823,0.177,0.6249,0.003154577,0.054383468,0.942461967,Great place to have a couple drinks and watch any and all sporting events as the walls are covered with TV's.,1,5 stars,Japanese,12
+235,0,1,0,0,0.26697892,0.632312298,0.100708827,"If it were possible to give them zero stars, they'd have it.",0,1 star,Japanese,12
+236,0,1,0,0,0.404204607,0.519815445,0.075979948,"The descriptions said ""yum yum sauce"" and another said ""eel sauce"", yet another said ""spicy mayo""...well NONE of the rolls had sauces on them.",0,2 stars,Japanese,12
+237,0,0.87,0.13,0.4588,0.082817845,0.357400656,0.559781492,"I'd say that would be the hardest decision... Honestly, all of M's dishes taste how they are supposed to taste (amazing).",1,5 stars,Japanese,12
+238,0.085,0.915,0,-0.2411,0.335464358,0.593967021,0.070568629,If she had not rolled the eyes we may have stayed... Not sure if we will go back and try it again.,0,3 stars,Japanese,12
+239,0,0.638,0.362,0.6077,0.002525335,0.025384774,0.972089887,"Everyone is very attentive, providing excellent customer service.",1,5 stars,Japanese,12
+240,0.323,0.462,0.215,-0.2887,0.961284101,0.034763943,0.003951974,Horrible - don't waste your time and money.,0,1 star,Japanese,12
+241,0,1,0,0,0.003784881,0.075799279,0.920415819,Now this dish was quite flavourful.,1,4 stars,Japanese,12
+242,0.217,0.712,0.071,-0.3961,0.259340823,0.647393286,0.093265951,By this time our side of the restaurant was almost empty so there was no excuse.,0,2 stars,Japanese,12
+243,0.192,0.808,0,-0.2808,0.056994211,0.367876619,0.575129211,"(It wasn't busy either) Also, the building was FREEZING cold.",0,2 stars,Japanese,12
+244,0,0.774,0.226,0.4207,0.830389023,0.160905287,0.008705705,"like the other reviewer said ""you couldn't pay me to eat at this place again.""",0,1 star,Japanese,12
+245,0,1,0,0,0.360974282,0.605296969,0.033728715,-Drinks took close to 30 minutes to come out at one point.,0,1 star,Japanese,12
+246,0.254,0.299,0.448,0.3182,0.004882358,0.164824545,0.830293059,"Seriously flavorful delights, folks.",1,4 stars,Japanese,12
+247,0,0.791,0.209,0.4404,0.004030795,0.068025097,0.927944064,Much better than the other AYCE sushi place I went to in Vegas.,1,5 stars,Japanese,12
+248,0,1,0,0,0.279370189,0.658707917,0.061921798,The lighting is just dark enough to set the mood.,1,3 stars,Japanese,12
+249,0.094,0.766,0.14,0.2732,0.951172709,0.046003941,0.002823387,Based on the sub-par service I received and no effort to show their gratitude for my business I won't be going back.,0,1 star,Japanese,12
+250,0,0.461,0.539,0.6893,0.00258851,0.023015326,0.974396169,Owner's are really great people.!,1,5 stars,Japanese,12
+251,0.286,0.714,0,-0.3412,0.442109138,0.496843427,0.061047453,There is nothing privileged about working/eating there.,0,3 stars,Japanese,12
+252,0,1,0,0,0.001624841,0.087604471,0.910770714,The Greek dressing was very creamy and flavorful.,1,4 stars,Japanese,12
+253,0.105,0.895,0,-0.4019,0.935160518,0.061990976,0.002848371,"Overall, I don't think that I would take my parents to this place again because they made most of the similar complaints that I silently felt too.",0,3 stars,Japanese,12
+254,0,0.791,0.209,0.4404,0.001922655,0.013500771,0.984576583,Now the pizza itself was good the peanut sauce was very tasty.,1,4 stars,Japanese,12
+255,0,0.758,0.242,0.4939,0.00157314,0.084902026,0.913524806,We had 7 at our table and the service was pretty fast.,1,4 stars,Japanese,12
+256,0,0.357,0.643,0.5574,0.006594785,0.064388603,0.92901659,Fantastic service here.,1,5 stars,Japanese,12
+257,0,0.792,0.208,0.2732,0.423244685,0.547504902,0.029250415,I as well would've given godfathers zero stars if possible.,0,1 star,Japanese,12
+258,0,1,0,0,0.196586907,0.725002885,0.078410283,They know how to make them here.,1,4 stars,Japanese,12
+259,0.258,0.742,0,-0.2698,0.466544181,0.426201999,0.107253827,very tough and very short on flavor!,0,2 stars,Japanese,12
+260,0,0.58,0.42,0.4404,0.012358595,0.240208998,0.747432411,I hope this place sticks around.,1,3 stars,Japanese,12
+261,0.091,0.909,0,-0.2023,0.205279067,0.629631698,0.165089294,"I have been in more than a few bars in Vegas, and do not ever recall being charged for tap water.",0,5 stars,Japanese,12
+262,0,1,0,0,0.003016595,0.03271554,0.96426791,The restaurant atmosphere was exquisite.,1,4 stars,Japanese,12
+263,0,0.492,0.508,0.7339,0.001883336,0.019605216,0.978511393,"Good service, very clean, and inexpensive, to boot!",1,5 stars,Japanese,12
+264,0,0.517,0.483,0.6808,0.002893752,0.212059349,0.785046935,The seafood was fresh and generous in portion.,1,4 stars,Japanese,12
+265,0,1,0,0,0.007486721,0.26575616,0.72675705,"Plus, it's only 8 bucks.",1,3 stars,Japanese,12
+266,0,1,0,0,0.850909412,0.139326766,0.009763821,"The service was not up to par, either.",0,2 stars,Japanese,12
+267,0,0.765,0.235,0.6115,0.003002053,0.014820197,0.982177734,"Thus far, have only visited twice and the food was absolutely delicious each time.",1,5 stars,Japanese,12
+268,0,0.758,0.242,0.4926,0.002548433,0.020560117,0.976891458,Just as good as when I had it more than a year ago!,1,5 stars,Japanese,12
+269,0.307,0.693,0,-0.4767,0.934934139,0.059745289,0.005320549,"For a self proclaimed coffee cafe, I was wildly disappointed.",0,2 stars,Japanese,12
+270,0,1,0,0,0.241630733,0.385092795,0.373276502,The Veggitarian platter is out of this world!,1,1 star,Japanese,12
+271,0,0.779,0.221,0.3724,0.061692309,0.470290273,0.468017429,You cant go wrong with any of the food here.,1,1 star,Japanese,12
+272,0,1,0,0,0.429063439,0.425137728,0.145798907,You can't beat that.,1,5 stars,Japanese,12
+273,0.095,0.548,0.357,0.7408,0.00104726,0.045339569,0.953613162,"Stopped by this place while in Madison for the Ironman, very friendly, kind staff.",1,5 stars,Japanese,12
+274,0,0.496,0.504,0.7269,0.002388496,0.028589325,0.969022214,The chefs were friendly and did a good job.,1,4 stars,Japanese,12
+275,0.104,0.779,0.117,0.0541,0.003344415,0.09230312,0.904352486,"I've had better, not only from dedicated boba tea spots, but even from Jenni Pho.",0,3 stars,Japanese,12
+276,0,0.469,0.531,0.7783,0.001890394,0.015757168,0.982352436,I liked the patio and the service was outstanding.,1,5 stars,Japanese,12
+277,0,0.729,0.271,0.6239,0.023687128,0.170148075,0.806164801,The goat taco didn't skimp on the meat and wow what FLAVOR!,1,5 stars,Burgers,13
+278,0,1,0,0,0.710666776,0.269074291,0.020258974,I think not again,0,2 stars,Burgers,13
+279,0,0.824,0.176,0.4939,0.974614322,0.02294362,0.002442,I had the mac salad and it was pretty bland so I will not be getting that again.,0,3 stars,Burgers,13
+280,0,0.797,0.203,0.3724,0.049789406,0.247401789,0.702808797,I went to Bachi Burger on a friend's recommendation and was not disappointed.,1,5 stars,Burgers,13
+281,0.534,0.466,0,-0.3164,0.95940876,0.034020111,0.006571207,Service stinks here!,0,1 star,Burgers,13
+282,0,1,0,0,0.31087473,0.629061759,0.060063459,I waited and waited.,0,1 star,Burgers,13
+283,0,1,0,0,0.952915847,0.044548452,0.002535721,"This place is not quality sushi, it is not a quality restaurant.",0,1 star,Burgers,13
+284,0,0.49,0.51,0.743,0.001759908,0.038464095,0.959775984,I would definitely recommend the wings as well as the pizza.,1,4 stars,Burgers,13
+285,0,0.406,0.594,0.6588,0.003147108,0.044972427,0.951880395,Great Pizza and Salads!,1,5 stars,Burgers,13
+286,0.307,0.693,0,-0.4767,0.914162636,0.081775114,0.004062193,Things that went wrong: - They burned the saganaki.,0,1 star,Burgers,13
+287,0,0.838,0.162,0.4404,0.552659035,0.349160016,0.098180905,We waited an hour for what was a breakfast I could have done 100 times better at home.,0,2 stars,Burgers,13
+288,0,0.423,0.577,0.6239,0.001663286,0.006945329,0.99139142,This place is amazing!,1,5 stars,Burgers,13
+289,0.408,0.592,0,-0.8637,0.972932696,0.024646116,0.002421197,"I hate to disagree with my fellow Yelpers, but my husband and I were so disappointed with this place.",0,2 stars,Burgers,13
+290,0,1,0,0,0.695404112,0.27592057,0.028675422,Waited 2 hours & never got either of our pizzas as many other around us who came in later did!,0,1 star,Burgers,13
+291,0,1,0,0,0.943906426,0.053406294,0.002687312,Just don't know why they were so slow.,0,2 stars,Burgers,13
+292,0,0.773,0.227,0.6249,0.001722508,0.007696826,0.990580738,"The staff is great, the food is delish, and they have an incredible beer selection.",1,5 stars,Burgers,13
+293,0.184,0.816,0,-0.5233,0.778774321,0.19234246,0.028883254,"I live in the neighborhood so I am disappointed I won't be back here, because it is a convenient location.",0,2 stars,Burgers,13
+294,0,0.654,0.346,0.5719,0.020889977,0.084110193,0.894999862,I didn't know pulled pork could be soooo delicious.,1,3 stars,Burgers,13
+295,0,0.386,0.614,0.788,0.006007558,0.233183891,0.760808527,"You get incredibly fresh fish, prepared with care.",1,5 stars,Burgers,13
+296,0,0.905,0.095,0.3182,0.101826817,0.759759188,0.138414085,Before I go in to why I gave a 1 star rating please know that this was my third time eating at Bachi burger before writing a review.,0,1 star,Burgers,13
+297,0,0.596,0.404,0.7269,0.002056158,0.008374673,0.989569247,I love the fact that everything on their menu is worth it.,1,5 stars,Burgers,13
+298,0,1,0,0,0.959070206,0.036322173,0.004607661,Never again will I be dining at this place!,0,5 stars,Burgers,13
+299,0,0.504,0.496,0.7841,0.001995775,0.011956882,0.986047268,The food was excellent and service was very good.,1,5 stars,Burgers,13
+300,0,0.508,0.492,0.7003,0.002834176,0.07647416,0.920691669,Good beer & drink selection and good food selection.,1,4 stars,Burgers,13
+301,0,0.777,0.223,0.3182,0.728624165,0.264314979,0.007060868,Please stay away from the shrimp stir fried noodles.,0,1 star,Burgers,13
+302,0,1,0,0,0.776300311,0.203195035,0.0205047,The potato chip order was sad... I could probably count how many chips were in that box and it was probably around 12.,0,2 stars,Burgers,13
+303,0.464,0.536,0,-0.3804,0.976027369,0.021018589,0.002953998,Food was really boring.,0,2 stars,Burgers,13
+304,0,0.239,0.761,0.4926,0.00573305,0.102678634,0.891588271,Good Service-check!,1,5 stars,Burgers,13
+305,0.224,0.776,0,-0.3802,0.930924773,0.061324865,0.007750323,This greedy corporation will NEVER see another dime from me!,0,1 star,Burgers,13
+306,0,1,0,0,0.586223304,0.342071027,0.071705654,"Will never, ever go back.",0,1 star,Burgers,13
+307,0,0.872,0.128,0.3612,0.978426039,0.019433592,0.002140427,"As much as I'd like to go back, I can't get passed the atrocious service and will never return.",0,1 star,Burgers,13
+308,0,0.574,0.426,0.847,0.001301505,0.011622865,0.987075627,"In the summer, you can dine in a charming outdoor patio - so very delightful.",1,5 stars,Burgers,13
+309,0,0.634,0.366,0.6166,0.247981325,0.224412754,0.527605891,I did not expect this to be so good!,1,2 stars,Burgers,13
+310,0,0.204,0.796,0.5983,0.003790932,0.025592485,0.970616579,Fantastic food!,1,5 stars,Burgers,13
+311,0,1,0,0,0.012756804,0.776728809,0.210514456,She ordered a toasted English muffin that came out untoasted.,0,1 star,Burgers,13
+312,0,0.556,0.444,0.4927,0.002108942,0.015147894,0.982743144,The food was very good.,1,4 stars,Burgers,13
+313,0,1,0,0,0.280204445,0.612464845,0.107330739,Never going back.,0,1 star,Burgers,13
+314,0,0.745,0.255,0.6249,0.002669514,0.022748521,0.974581957,"Great food for the price, which is very high quality and house made.",1,5 stars,Burgers,13
+315,0.227,0.552,0.221,-0.024,0.949721515,0.047109522,0.003169026,The bus boy on the other hand was so rude.,0,2 stars,Burgers,13
+316,0,0.798,0.202,0.6486,0.165607899,0.636263549,0.198128566,"By this point, my friends and I had basically figured out this place was a joke and didn't mind making it publicly and loudly known.",0,2 stars,Burgers,13
+317,0,0.861,0.139,0.4404,0.009404333,0.207090512,0.783505142,"Back to good BBQ, lighter fare, reasonable pricing and tell the public they are back to the old ways.",1,5 stars,Burgers,13
+318,0,0.734,0.266,0.7592,0.004420866,0.069844052,0.925735116,"And considering the two of us left there very full and happy for about $20, you just can't go wrong.",1,5 stars,Burgers,13
+319,0,1,0,0,0.022960132,0.505304158,0.471735716,All the bread is made in-house!,1,5 stars,Burgers,13
+320,0.286,0.714,0,-0.25,0.88719219,0.105045736,0.007762049,The only downside is the service.,0,4 stars,Burgers,13
+321,0,0.649,0.351,0.6602,0.975756049,0.021742336,0.002501582,"Also, the fries are without a doubt the worst fries I've ever had.",0,1 star,Burgers,13
+322,0,0.775,0.225,0.4404,0.004115724,0.038379375,0.957504928,Service was exceptional and food was a good as all the reviews.,1,5 stars,Burgers,13
+323,0,0.703,0.297,0.5859,0.001094604,0.012482598,0.986422837,"A couple of months later, I returned and had an amazing meal.",1,5 stars,Burgers,13
+324,0,0.545,0.455,0.6331,0.001143829,0.03309701,0.965759158,Favorite place in town for shawarrrrrrma!!!!!!,1,5 stars,Burgers,13
+325,0,0.68,0.32,0.5093,0.01148551,0.117926963,0.870587528,The black eyed peas and sweet potatoes... UNREAL!,1,1 star,Burgers,13
+326,0,0.54,0.46,0.3724,0.091319732,0.450277716,0.458402485,You won't be disappointed.,1,5 stars,Burgers,13
+327,0,0.762,0.238,0.7383,0.005290917,0.071350232,0.923358858,"They could serve it with just the vinaigrette and it may make for a better overall dish, but it was still very good.",1,4 stars,Burgers,13
+328,0,1,0,0,0.780166328,0.198194399,0.021639297,"I go to far too many places and I've never seen any restaurant that serves a 1 egg breakfast, especially for $4.00.",0,1 star,Burgers,13
+329,0.163,0.837,0,-0.5106,0.872417748,0.11998526,0.007596977,When my mom and I got home she immediately got sick and she only had a few bites of salad.,0,2 stars,Burgers,13
+330,0.276,0.724,0,-0.652,0.97358954,0.024201388,0.002209069,The servers are not pleasant to deal with and they don't always honor Pizza Hut coupons.,0,2 stars,Burgers,13
+331,0,0.525,0.475,0.8738,0.0018935,0.006643387,0.991463125,"Both of them were truly unbelievably good, and I am so glad we went back.",1,5 stars,Burgers,13
+332,0,0.552,0.448,0.7579,0.001868768,0.010420427,0.987710774,"We had fantastic service, and were pleased by the atmosphere.",1,5 stars,Burgers,13
+333,0.608,0.392,0,-0.4767,0.967003584,0.029496225,0.003500218,Everything was gross.,0,1 star,Burgers,13
+334,0,0.323,0.677,0.6369,0.003491945,0.008456805,0.988051176,I love this place.,1,5 stars,Burgers,13
+335,0,0.423,0.577,0.6249,0.005955403,0.060671322,0.933373213,Great service and food.,1,5 stars,Burgers,13
+336,0.32,0.68,0,-0.7633,0.979045331,0.018422797,0.00253199,First - the bathrooms at this location were dirty- Seat covers were not replenished & just plain yucky!!!,0,2 stars,Burgers,13
+337,0.22,0.78,0,-0.5256,0.951624274,0.044689436,0.003686299,"The burger... I got the ""Gold Standard"" a $17 burger and was kind of disappointed.",0,3 stars,Burgers,13
+338,0,1,0,0,0.001764606,0.022287948,0.97594744,"OMG, the food was delicioso!",1,5 stars,Burgers,13
+339,0,1,0,0,0.955192685,0.042328086,0.002479216,There is nothing authentic about this place.,0,1 star,Burgers,13
+340,0.311,0.689,0,-0.3089,0.90160495,0.090645902,0.007749139,the spaghetti is nothing special whatsoever.,0,3 stars,Burgers,13
+341,0,0.571,0.429,0.85,0.002153676,0.021572685,0.976273656,"Of all the dishes, the salmon was the best, but all were great.",1,4 stars,Burgers,13
+342,0,0.646,0.354,0.6696,0.002081545,0.050389249,0.947529256,The vegetables are so fresh and the sauce feels like authentic Thai.,1,5 stars,Burgers,13
+343,0,0.695,0.305,0.2942,0.004793322,0.226171985,0.769034684,It's worth driving up from Tucson!,1,5 stars,Burgers,13
+344,0.272,0.728,0,-0.6249,0.967083156,0.029934626,0.002982201,The selection was probably the worst I've seen in Vegas.....there was none.,0,1 star,Burgers,13
+345,0,0.33,0.67,0.7269,0.002151028,0.037384011,0.960464954,Pretty good beer selection too.,1,4 stars,Burgers,13
+346,0,0.427,0.573,0.7717,0.110876307,0.318078607,0.571045101,"This place is like Chipotle, but BETTER.",1,3 stars,Burgers,13
+347,0,0.542,0.458,0.7762,0.00107313,0.0344413,0.964485526,"Classy/warm atmosphere, fun and fresh appetizers, succulent steaks (Baseball steak!!!!!",1,5 stars,Burgers,13
+348,0,1,0,0,0.001416724,0.048410881,0.950172365,5 stars for the brick oven bread app!,1,5 stars,Burgers,13
+349,0,0.748,0.252,0.5719,0.002389071,0.019925725,0.977685153,"I have eaten here multiple times, and each time the food was delicious.",1,5 stars,Burgers,13
+350,0,1,0,0,0.395684421,0.574267089,0.030048463,We sat another ten minutes and finally gave up and left.,0,1 star,Burgers,13
+351,0.629,0.371,0,-0.5255,0.951784968,0.041292958,0.006922016,He was terrible!,0,1 star,Burgers,13
+352,0,0.597,0.403,0.4019,0.013339829,0.233293548,0.753366649,Everyone is treated equally special.,1,5 stars,Burgers,13
+353,0,1,0,0,0.288638562,0.642089009,0.069272429,It shouldn't take 30 min for pancakes and eggs.,0,2 stars,Burgers,13
+354,0,0.304,0.696,0.6784,0.003125147,0.012083976,0.984790862,It was delicious!!!,1,5 stars,Burgers,13
+355,0,0.427,0.573,0.9022,0.001915742,0.011963742,0.986120522,"On the good side, the staff was genuinely pleasant and enthusiastic - a real treat.",1,4 stars,Burgers,13
+356,0.263,0.737,0,-0.6124,0.875019848,0.117281102,0.007699039,"Sadly, Gordon Ramsey's Steak is a place we shall sharply avoid during our next trip to Vegas.",0,2 stars,Burgers,13
+357,0,0.51,0.49,0.8268,0.001560403,0.006233074,0.992206514,As always the evening was wonderful and the food delicious!,1,5 stars,Burgers,13
+358,0,0.609,0.391,0.6696,0.002456785,0.025267869,0.972275376,Best fish I've ever had in my life!,1,5 stars,Burgers,13
+359,0,1,0,0,0.002158952,0.037117764,0.960723281,(The bathroom is just next door and very nice.),1,4 stars,Burgers,13
+360,0,1,0,0,0.09497609,0.731872499,0.173151419,The buffet is small and all the food they offered was BLAND.,0,2 stars,Burgers,13
+361,0,0.613,0.387,0.8481,0.001578484,0.018744068,0.979677498,This is an Outstanding little restaurant with some of the Best Food I have ever tasted.,1,5 stars,Burgers,13
+362,0,0.267,0.733,0.6705,0.00254367,0.042028073,0.955428302,Pretty cool I would say.,1,4 stars,Burgers,13
+363,0.145,0.698,0.157,0.0516,0.9584378,0.039097071,0.002465196,Definitely a turn off for me & i doubt I'll be back unless someone else is buying.,0,1 star,Burgers,13
+364,0,0.661,0.339,0.6249,0.002248578,0.023773685,0.973977685,Server did a great job handling our large rowdy table.,1,5 stars,Burgers,13
+365,0.156,0.844,0,-0.2144,0.972916901,0.02421117,0.002871869,"I find wasting food to be despicable, but this just wasn't food.",0,2 stars,Burgers,13
+366,0,1,0,0,0.4265984,0.525623202,0.04777839,My wife had the Lobster Bisque soup which was lukewarm.,0,2 stars,Burgers,13
+367,0,1,0,0,0.003284928,0.546340227,0.450374871,Would come back again if I had a sushi craving while in Vegas.,1,3 stars,Burgers,13
+368,0,0.423,0.577,0.8481,0.001412142,0.009691755,0.988896132,"The staff are great, the ambiance is great.",1,5 stars,Burgers,13
+369,0,1,0,0,0.011587022,0.23792468,0.750488281,He deserves 5 stars.,1,5 stars,Burgers,13
+370,0.371,0.629,0,-0.7096,0.966109157,0.030860649,0.003030268,I left with a stomach ache and felt sick the rest of the day.,0,2 stars,Burgers,13
+371,0,1,0,0,0.753278434,0.235209167,0.01151246,They dropped more than the ball.,0,1 star,Burgers,13
+372,0,0.491,0.509,0.8519,0.002273372,0.062961251,0.934765399,"The dining space is tiny, but elegantly decorated and comfortable.",1,4 stars,Burgers,13
+373,0,0.72,0.28,0.7901,0.001571646,0.022089818,0.976338565,"They will customize your order any way you'd like, my usual is Eggplant with Green Bean stir fry, love it!",1,5 stars,Burgers,13
+374,0,0.656,0.344,0.6369,0.934547961,0.060161084,0.00529097,And the beans and rice were mediocre at best.,0,2 stars,Burgers,13
+375,0,0.511,0.489,0.6988,0.001347169,0.02307743,0.975575387,Best tacos in town by far!!,1,5 stars,Burgers,13
+376,0,1,0,0,0.192372933,0.739631593,0.067995407,I took back my money and got outta there.,0,1 star,Burgers,13
+377,0,0.552,0.448,0.7579,0.001372802,0.010468042,0.98815918,"In an interesting part of town, this place is amazing.",1,5 stars,Burgers,13
+378,0.855,0.145,0,-0.7096,0.140391618,0.725681782,0.13392657,RUDE & INCONSIDERATE MANAGEMENT.,0,5 stars,Burgers,13
+379,0.275,0.725,0,-0.8089,0.96694839,0.029945366,0.003106275,"The staff are now not as friendly, the wait times for being served are horrible, no one even says hi for the first 10 minutes.",0,2 stars,Burgers,13
+380,0,1,0,0,0.495865911,0.460197598,0.043936539,I won't be back.,0,1 star,Burgers,13
+381,0,0.423,0.577,0.6249,0.003241267,0.054102797,0.942655981,They have great dinners.,1,5 stars,Burgers,13
+382,0,0.536,0.464,0.6369,0.001391388,0.027617965,0.970990717,The service was outshining & I definitely recommend the Halibut.,1,5 stars,Burgers,13
+383,0.508,0.492,0,-0.4767,0.974456191,0.022630438,0.002913342,The food was terrible.,0,1 star,Burgers,13
+384,0,1,0,0,0.74168992,0.230709329,0.027600743,WILL NEVER EVER GO BACK AND HAVE TOLD MANY PEOPLE WHAT HAD HAPPENED.,0,5 stars,Burgers,13
+385,0.274,0.726,0,-0.6007,0.91183722,0.082644515,0.005518197,I don't recommend unless your car breaks down in front of it and you are starving.,0,1 star,Burgers,13
+386,0,1,0,0,0.006823334,0.560816824,0.432359874,I will come back here every time I'm in Vegas.,1,5 stars,Burgers,13
+387,0,1,0,0,0.014479652,0.118433505,0.867086828,This place deserves one star and 90% has to do with the food.,0,1 star,Burgers,13
+388,0.615,0.385,0,-0.4939,0.971044779,0.025892474,0.003062865,This is a disgrace.,0,1 star,Burgers,13
+389,0,1,0,0,0.005939413,0.610656321,0.383404285,Def coming back to bowl next time,1,1 star,Burgers,13
+390,0,0.692,0.308,0.4588,0.00520338,0.431059927,0.563736737,"If you want healthy authentic or ethic food, try this place.",1,5 stars,Burgers,13
+391,0,0.887,0.113,0.4201,0.001100652,0.033875957,0.965023398,I will continue to come here on ladies night andddd date night ... highly recommend this place to anyone who is in the area.,1,5 stars,Burgers,13
+392,0,0.773,0.227,0.6249,0.001626965,0.012037174,0.986335874,"I have been here several times in the past, and the experience has always been great.",1,5 stars,Burgers,13
+393,0,0.748,0.252,0.5719,0.002281158,0.039009027,0.958709776,We walked away stuffed and happy about our first Vegas buffet experience.,1,5 stars,Burgers,13
+394,0,0.734,0.266,0.7845,0.001541588,0.021988403,0.976470053,Service was excellent and prices are pretty reasonable considering this is Vegas and located inside the Crystals shopping mall by Aria.,1,4 stars,Burgers,13
+395,0.148,0.719,0.133,-0.1074,0.004233032,0.019040454,0.976726532,"To summarize... the food was incredible, nay, transcendant... but nothing brings me joy quite like the memory of the pneumatic condiment dispenser.",1,3 stars,Burgers,13
+396,0.123,0.877,0,-0.2755,0.735646069,0.240505263,0.023848698,I'm probably one of the few people to ever go to Ians and not like it.,0,2 stars,Burgers,13
+397,0,0.774,0.226,0.6588,0.001073256,0.014045588,0.984881163,Kids pizza is always a hit too with lots of great side dish options for the kiddos!,1,5 stars,Burgers,13
+398,0,0.581,0.419,0.7579,0.00190324,0.010961813,0.987134993,Service is perfect and the family atmosphere is nice to see.,1,5 stars,Burgers,13
+399,0,0.654,0.346,0.5719,0.003985895,0.058801543,0.937212527,Cooked to perfection and the service was impeccable.,1,5 stars,Burgers,13
+400,0.452,0.548,0,-0.5106,0.969959199,0.027121656,0.002919153,This one is simply a disappointment.,0,1 star,Burgers,13
+401,0.253,0.747,0,-0.5256,0.980122328,0.017900381,0.001977287,"Overall, I was very disappointed with the quality of food at Bouchon.",0,2 stars,Burgers,13
+402,0.259,0.741,0,-0.5411,0.827387333,0.154500946,0.018111695,I don't have to be an accountant to know I'm getting screwed!,0,1 star,Thai,14
+403,0,0.814,0.186,0.6249,0.001638108,0.02178809,0.976573825,"Great place to eat, reminds me of the little mom and pop shops in the San Francisco Bay Area.",1,5 stars,Thai,14
+404,0,1,0,0,0.002875738,0.042064115,0.955060124,Today was my first taste of a Buldogis Gourmet Hot Dog and I have to tell you it was more than I ever thought possible.,1,5 stars,Thai,14
+405,0.649,0.351,0,-0.5709,0.874477923,0.117797844,0.007724206,Left very frustrated.,0,2 stars,Thai,14
+406,0,0.649,0.351,0.4019,0.001461498,0.12268874,0.875849783,I'll definitely be in soon again.,1,5 stars,Thai,14
+407,0.15,0.584,0.266,0.3384,0.002103739,0.018677697,0.979218543,Food was really good and I got full petty fast.,1,5 stars,Thai,14
+408,0,0.357,0.643,0.5574,0.00741948,0.049094781,0.943485737,Service was fantastic.,1,5 stars,Thai,14
+409,0.483,0.517,0,-0.4215,0.79381901,0.188764498,0.017416451,TOTAL WASTE OF TIME.,0,1 star,Thai,14
+410,0.101,0.589,0.31,0.7106,0.002833628,0.027671816,0.969494581,I don't know what kind it is but they have the best iced tea.,1,4 stars,Thai,14
+411,0.131,0.435,0.434,0.5848,0.022107208,0.189762831,0.788129985,"Come hungry, leave happy and stuffed!",1,1 star,Thai,14
+412,0.306,0.694,0,-0.296,0.396428227,0.552333117,0.051238675,"For service, I give them no stars.",0,1 star,Thai,14
+413,0,0.548,0.452,0.6065,0.030056763,0.296881437,0.673061848,I can assure you that you won't be disappointed.,1,5 stars,Thai,14
+414,0.433,0.567,0,-0.6546,0.970531225,0.026127497,0.003341366,I can take a little bad service but the food sucks.,0,2 stars,Thai,14
+415,0,1,0,0,0.836939454,0.153395876,0.009664676,Gave up trying to eat any of the crust (teeth still sore).,0,2 stars,Thai,14
+416,0.29,0.71,0,-0.2592,0.940278888,0.054538935,0.005182107,But now I was completely grossed out.,0,2 stars,Thai,14
+417,0,0.455,0.545,0.5563,0.002201298,0.015092387,0.982706308,I really enjoyed eating here.,1,5 stars,Thai,14
+418,0,1,0,0,0.003037606,0.212958962,0.784003437,First time going but I think I will quickly become a regular.,1,3 stars,Thai,14
+419,0.037,0.749,0.214,0.7351,0.003215207,0.025009247,0.971775591,"Our server was very nice, and even though he looked a little overwhelmed with all of our needs, he stayed professional and friendly until the end.",1,4 stars,Thai,14
+420,0,0.697,0.303,0.6865,0.001885343,0.043401808,0.954712808,From what my dinner companions told me...everything was very fresh with nice texture and taste.,1,5 stars,Thai,14
+421,0,1,0,0,0.816118598,0.168625772,0.015255577,"On the ground, right next to our table was a large, smeared, been-stepped-in-and-tracked-everywhere pile of green bird poop.",0,1 star,Thai,14
+422,0,1,0,0,0.65123409,0.293142706,0.055623204,"Furthermore, you can't even find hours of operation on the website!",0,1 star,Thai,14
+423,0,0.889,0.111,0.1901,0.663000464,0.308022082,0.028977482,We've tried to like this place but after 10+ times I think we're done with them.,0,4 stars,Thai,14
+424,0.473,0.527,0,-0.4003,0.927767277,0.060972255,0.011260441,What a mistake that was!,0,1 star,Thai,14
+425,1,0,0,-0.636,0.043381087,0.296258032,0.660360873,No complaints!,1,5 stars,Thai,14
+426,0.109,0.705,0.186,0.296,0.001817308,0.01941935,0.978763402,This is some seriously good pizza and I'm an expert/connisseur on the topic.,1,4 stars,Thai,14
+427,0.545,0.455,0,-0.34,0.941036284,0.054659057,0.004304749,Waiter was a jerk.,0,1 star,Thai,14
+428,0.2,0.8,0,-0.128,0.193079308,0.760869145,0.046051577,"Strike 2, who wants to be rushed.",0,1 star,Thai,14
+429,0,0.738,0.262,0.4939,0.001844295,0.011850581,0.986305118,These are the nicest restaurant owners I've ever come across.,1,5 stars,Thai,14
+430,0,1,0,0,0.593624115,0.376343101,0.030032724,I never come again.,0,1 star,Thai,14
+431,0,0.386,0.614,0.6981,0.003183567,0.016030079,0.980786383,We loved the biscuits!!!,1,5 stars,Thai,14
+432,0,0.556,0.444,0.4939,0.004985547,0.120612644,0.874401808,Service is quick and friendly.,1,5 stars,Thai,14
+433,0,1,0,0,0.028762845,0.898333371,0.07290376,Ordered an appetizer and took 40 minutes and then the pizza another 10 minutes.,0,1 star,Thai,14
+434,0,0.34,0.66,0.5965,0.011819409,0.071194015,0.916986585,So absolutley fantastic.,1,5 stars,Thai,14
+435,0.101,0.755,0.145,0.1779,0.799127638,0.183812305,0.017060015,It was a huge awkward 1.5lb piece of cow that was 3/4ths gristle and fat.,0,2 stars,Thai,14
+436,0,0.649,0.351,0.4019,0.00303261,0.201587111,0.795380235,definitely will come back here again.,1,5 stars,Thai,14
+437,0,0.615,0.385,0.6124,0.004387419,0.081935123,0.913677454,I like Steiners because it's dark and it feels like a bar.,1,4 stars,Thai,14
+438,0,0.277,0.723,0.8336,0.002844879,0.028364722,0.968790412,Wow very spicy but delicious.,1,5 stars,Thai,14
+439,0,1,0,0,0.284478098,0.645365655,0.070156299,"If you're not familiar, check it out.",1,3 stars,Thai,14
+440,0,1,0,0,0.321777374,0.640035212,0.038187463,I'll take my business dinner dollars elsewhere.,0,1 star,Thai,14
+441,0,0.488,0.512,0.6369,0.00403558,0.039723307,0.956241131,I'd love to go back.,1,1 star,Thai,14
+442,0,0.619,0.381,0.5719,0.001135209,0.013916933,0.98494786,"Anyway, this FS restaurant has a wonderful breakfast/lunch.",1,5 stars,Thai,14
+443,0.693,0.307,0,-0.3089,0.236915886,0.684310198,0.078773968,Nothing special.,0,2 stars,Thai,14
+444,0,0.721,0.279,0.7213,0.00134358,0.00910914,0.989547253,Each day of the week they have a different deal and it's all so delicious!,1,5 stars,Thai,14
+445,0,0.746,0.254,0.6239,0.002023195,0.053125333,0.944851518,"Not to mention the combination of pears, almonds and bacon is a big winner!",1,5 stars,Thai,14
+446,0,1,0,0,0.539589643,0.423315078,0.037095338,Will not be back.,0,1 star,Thai,14
+447,0,1,0,0,0.934966445,0.058482863,0.006550627,Sauce was tasteless.,0,1 star,Thai,14
+448,0,0.752,0.248,0.7414,0.002797054,0.037222993,0.959979951,"The food is delicious and just spicy enough, so be sure to ask for spicier if you prefer it that way.",1,4 stars,Thai,14
+449,0,0.52,0.48,0.8519,0.0017946,0.024045845,0.974159598,My ribeye steak was cooked perfectly and had great mesquite flavor.,1,5 stars,Thai,14
+450,0,1,0,0,0.795225203,0.189896673,0.014878108,I don't think we'll be going back anytime soon.,0,2 stars,Thai,14
+451,0,1,0,0,0.00272831,0.019016748,0.978254855,Food was so gooodd.,1,1 star,Thai,14
+452,0.25,0.474,0.276,0,0.574186325,0.37063095,0.05518274,I am far from a sushi connoisseur but I can definitely tell the difference between good food and bad food and this was certainly bad food.,0,2 stars,Thai,14
+453,0.642,0.358,0,-0.5563,0.959903121,0.036581382,0.00351554,I was so insulted.,0,1 star,Thai,14
+454,0.304,0.696,0,-0.5423,0.969701111,0.028091526,0.002207315,The last 3 times I had lunch here has been bad.,0,2 stars,Thai,14
+455,0,1,0,0,0.765354514,0.213771015,0.020874433,The chicken wings contained the driest chicken meat I have ever eaten.,0,1 star,Thai,14
+456,0,0.538,0.462,0.9162,0.001378031,0.007775868,0.990846097,"The food was very good and I enjoyed every mouthful, an enjoyable relaxed venue for couples small family groups etc.",1,4 stars,Thai,14
+457,0,0.494,0.506,0.6249,0.003420839,0.035112999,0.961466193,Nargile - I think you are great.,1,5 stars,Thai,14
+458,0,0.543,0.457,0.6369,0.002576349,0.111563779,0.885859847,Best tater tots in the southwest.,1,5 stars,Thai,14
+459,0,0.435,0.565,0.5994,0.015384306,0.081277929,0.903337777,We loved the place.,1,5 stars,Thai,14
+460,0.199,0.478,0.323,0.2579,0.92857784,0.066317327,0.005104843,Definitely not worth the $3 I paid.,0,1 star,Thai,14
+461,0,0.791,0.209,0.4019,0.00437948,0.149850085,0.845770419,The vanilla ice cream was creamy and smooth while the profiterole (choux) pastry was fresh enough.,1,3 stars,Thai,14
+462,0,1,0,0,0.017162893,0.795416415,0.187420681,Im in AZ all the time and now have my new spot.,1,5 stars,Thai,14
+463,0.506,0.494,0,-0.6249,0.971338868,0.025750684,0.002910475,The manager was the worst.,0,1 star,Thai,14
+464,0,0.524,0.476,0.748,0.001590722,0.015673593,0.982735634,The inside is really quite nice and very clean.,1,5 stars,Thai,14
+465,0,0.692,0.308,0.6124,0.002268652,0.020151412,0.977580011,The food was outstanding and the prices were very reasonable.,1,5 stars,Thai,14
+466,0,1,0,0,0.683633089,0.2885589,0.027808005,I don't think I'll be running back to Carly's anytime soon for food.,0,3 stars,Thai,14
+467,0,1,0,0,0.844025314,0.146524772,0.009449898,"This is was due to the fact that it took 20 minutes to be acknowledged, then another 35 minutes to get our food...and they kept forgetting things.",0,1 star,Thai,14
+468,0,0.4,0.6,0.6696,0.001597278,0.017772205,0.980630577,"Love the margaritas, too!",1,5 stars,Thai,14
+469,0,0.842,0.158,0.3089,0.003063685,0.025151294,0.971785069,This was my first and only Vegas buffet and it did not disappoint.,1,5 stars,Thai,14
+470,0,0.365,0.635,0.54,0.002422427,0.021529488,0.976048052,"Very good, though!",1,4 stars,Thai,14
+471,0,1,0,0,0.637087584,0.338952482,0.023959884,The one down note is the ventilation could use some upgrading.,0,3 stars,Thai,14
+472,0,0.328,0.672,0.6249,0.004213506,0.041908566,0.953877985,Great pork sandwich.,1,5 stars,Thai,14
+473,0,0.632,0.368,0.3252,0.775225997,0.206663057,0.018110918,Don't waste your time here.,0,1 star,Thai,14
+474,0,1,0,0,0.744685292,0.229513779,0.025800917,"Total letdown, I would much rather just go to the Camelback Flower Shop and Cartel Coffee.",0,1 star,Thai,14
+475,0,1,0,0,0.796305537,0.191732392,0.011962017,"Third, the cheese on my friend's burger was cold.",0,2 stars,Thai,14
+476,0,0.61,0.39,0.4939,0.002768823,0.04733634,0.949894845,We enjoy their pizza and brunch.,1,4 stars,Thai,14
+477,0,0.559,0.441,0.743,0.003206883,0.082158707,0.914634407,The steaks are all well trimmed and also perfectly cooked.,1,5 stars,Thai,14
+478,0,0.821,0.179,0.5719,0.011329396,0.189276427,0.79939425,We had a group of 70+ when we claimed we would only have 40 and they handled us beautifully.,1,5 stars,Thai,14
+479,0,0.169,0.831,0.7118,0.002937892,0.009382344,0.98767972,I LOVED it!,1,5 stars,Thai,14
+480,0.079,0.921,0,-0.0516,0.646536112,0.342166483,0.011297413,We asked for the bill to leave without eating and they didn't bring that either.,0,1 star,Thai,14
+481,0,0.782,0.218,0.6486,0.001645608,0.021834632,0.976519704,"This place is a jewel in Las Vegas, and exactly what I've been hoping to find in nearly ten years living here.",1,5 stars,Thai,14
+482,0.173,0.668,0.158,0.1672,0.938449204,0.058094036,0.003456763,Seafood was limited to boiled shrimp and crab legs but the crab legs definitely did not taste fresh.,0,2 stars,Thai,14
+483,0.325,0.675,0,-0.5216,0.921862662,0.073397949,0.004739406,The selection of food was not the best.,0,3 stars,Thai,14
+484,0,0.556,0.444,0.6114,0.001208548,0.013172752,0.98561877,Delicious and I will absolutely be back!,1,5 stars,Thai,14
+485,0,0.833,0.167,0.2023,0.004551392,0.278235435,0.717213154,"This isn't a small family restaurant, this is a fine dining establishment.",1,4 stars,Thai,14
+486,0,0.859,0.141,0.4215,0.001436561,0.035948813,0.962614655,They had a toro tartare with a cavier that was extraordinary and I liked the thinly sliced wagyu with white truffle.,1,4 stars,Thai,14
+487,0,1,0,0,0.843023002,0.143222764,0.013754328,I dont think I will be back for a very long time.,0,2 stars,Thai,14
+488,0.179,0.821,0,-0.3412,0.786880076,0.196228489,0.016891485,"It was attached to a gas station, and that is rarely a good sign.",0,2 stars,Thai,14
+489,0,0.423,0.577,0.6249,0.002512919,0.022745611,0.974741518,How awesome is that.,1,5 stars,Thai,14
+490,0,1,0,0,0.002644395,0.177496836,0.819858789,I will be back many times soon.,1,5 stars,Thai,14
+491,0,0.76,0.24,0.5378,0.004646401,0.017803153,0.977550507,The menu had so much good stuff on it i could not decide!,1,2 stars,Thai,14
+492,0.409,0.591,0,-0.8402,0.978220999,0.019621948,0.002157135,"Worse of all, he humiliated his worker right in front of me..Bunch of horrible name callings.",0,1 star,Thai,14
+493,0,1,0,0,0.002102178,0.046455726,0.951442063,CONCLUSION: Very filling meals.,1,4 stars,Thai,14
+494,0,1,0,0,0.001741236,0.074036874,0.924221814,Their daily specials are always a hit with my group.,1,5 stars,Thai,14
+495,0.762,0.238,0,-0.7506,0.661004066,0.304048002,0.034947943,And then tragedy struck.,0,1 star,Thai,14
+496,0,0.575,0.425,0.7688,0.00116888,0.017993737,0.980837405,The pancake was also really good and pretty large at that.,1,4 stars,Thai,14
+497,0,0.693,0.307,0.6114,0.001087224,0.009545787,0.989366949,"This was my first crawfish experience, and it was delicious!",1,5 stars,Thai,14
+498,0,0.786,0.214,0.4588,0.002425222,0.019768482,0.97780627,Their monster chicken fried steak and eggs is my all time favorite.,1,5 stars,Thai,14
+499,0,0.337,0.663,0.7096,0.002526221,0.049856398,0.947617352,Waitress was sweet and funny.,1,5 stars,Thai,14
