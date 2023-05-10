@@ -13,6 +13,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
+    <!-- CSS from w3schools -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,11 +50,14 @@
             <a href="/rental-map" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Rental Map</a>
 
             <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-button">Data Visualisation <i class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                    <a href="/data-viz/pie" class="w3-bar-item w3-button">Asian</a>
+                <button class="w3-button">Cuisines <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" id = "Cuisine-dropdown">
+
+
+
+                    <!-- <a href="/data-viz/pie" class="w3-bar-item w3-button">Asian</a>
                     <a href="/data-viz/bar" class="w3-bar-item w3-button">Indian</a>
-                    <a href="/data-viz/scatter" class="w3-bar-item w3-button">MURICA</a>
+                    <a href="/data-viz/scatter" class="w3-bar-item w3-button">MURICA</a> -->
                 </div>
             </div>
         </div>
@@ -61,7 +65,7 @@
 
 
 
-        <div clas = "container">
+        <div class="container">
             <hr>
             <h1>Lorem Ipsum!</h1>
             <hr>
@@ -76,16 +80,30 @@
             <br>
             <br>
 
+        </div>
+
+        <!-- This container will be filled by D3 -->
+        <div class="container">
+            <div id="restofiller">
+                <div class="w3-panel w3-light-grey">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="d3tester"></div>
 
 
+        <!-- Dependencies -->
 
 
+        <!-- D3 -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
 
-
-          </div>
-
-
-
+        <!-- Local JS -->
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+        <!-- <script src = "../static/js/index.js"></script> -->
 </body>
 
 </html>
