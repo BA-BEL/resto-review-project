@@ -24,6 +24,12 @@ function init() {
         //  Declare DOM objects
         let resto;
 
+        //  option objects for apex plot
+        var options;
+        let pos;
+        let neu;
+        let neg;
+
         //  D3 iteration through json to print out results
         for (let i = 0; i < data.length; i++) {
 
@@ -37,6 +43,83 @@ function init() {
 
             // Restaurant score
             resto.append("p").text(`Vader Compound: ${data[i]["vader_compound"]}`);
+
+            resto.append("div").attr("id", `Chart-${data[i]["id"]}`)
+
+
+            // assign scores
+            pos = data[i]["vader_pos"];
+            neu = data[i]["vader_neu"];
+            neg = data[i]["vader_neg"];
+
+            options = {
+                series: [{
+                    name: 'Positive',
+                    data: [pos]
+                },
+                {
+                    name: 'Neutral',
+                    data: [neg]
+                },
+                {
+                    name: 'Negative',
+                    data: [neg]
+                }],
+                chart: {
+                    type: 'bar',
+                    height: 100,
+                    stacked: true,
+                    stackType: '100%'
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: true,
+                    },
+                },
+                stroke: {
+                    width: 1,
+                    colors: ['#fff']
+                },
+                title: {
+                    // text: '100% Stacked Bar'
+                },
+                xaxis: {
+                    labels: {
+                        show: false
+                    }
+
+                },
+                yaxis: {
+                    labels: {
+                        show: false
+                    }
+                },
+                tooltip: {
+                    y: {
+                        formatter: function (val) {
+                            // return Math.round(val*100,2) + "%"
+                            return "idk what to put here; depends on what final data looks like"
+                        }
+                    }
+                },
+                fill: {
+                    opacity: 1
+
+                },
+                legend: {
+                    show: false,
+                    position: 'top',
+                    horizontalAlign: 'left',
+                    offsetX: 40
+                },
+                toolbar:{
+                    show:false
+                }
+            };
+
+            var chart = new ApexCharts(document.querySelector(`#Chart-${data[i]["id"]}`), options);
+            chart.render();
+
         }
 
 
@@ -128,7 +211,7 @@ function onClick(value) {
                 // Restaurant score
                 resto.append("p").text(`Vader Compound: ${data[i]["vader_compound"]}`);
             }
-            else {}
+            else { }
         }
     });
 
@@ -158,3 +241,65 @@ init();
 // d3tester.append("p").text("testing one");
 // d3tester.append("p").text("testing two time travel");
 // d3tester.append("p").text("testing three: the one after cache is cleared!")
+
+
+//// Apex Charts Test Functionality
+
+// var options = {
+//     series: [{
+//         name: 'Marine Sprite',
+//         data: [44, 55, 41, 37, 22, 43, 21]
+//     }, {
+//         name: 'Striking Calf',
+//         data: [53, 32, 33, 52, 13, 43, 32]
+//     }, {
+//         name: 'Tank Picture',
+//         data: [12, 17, 11, 9, 15, 11, 20]
+//     }, {
+//         name: 'Bucket Slope',
+//         data: [9, 7, 5, 8, 6, 9, 4]
+//     }, {
+//         name: 'Reborn Kid',
+//         data: [25, 12, 19, 32, 25, 24, 10]
+//     }],
+//     chart: {
+//         type: 'bar',
+//         height: 350,
+//         stacked: true,
+//         stackType: '100%'
+//     },
+//     plotOptions: {
+//         bar: {
+//             horizontal: true,
+//         },
+//     },
+//     stroke: {
+//         width: 1,
+//         colors: ['#fff']
+//     },
+//     title: {
+//         text: '100% Stacked Bar'
+//     },
+//     xaxis: {
+//         categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+//     },
+//     tooltip: {
+//         y: {
+//             formatter: function (val) {
+//                 return val + "K"
+//             }
+//         }
+//     },
+//     fill: {
+//         opacity: 1
+
+//     },
+//     legend: {
+//         position: 'top',
+//         horizontalAlign: 'left',
+//         offsetX: 40
+//     }
+// };
+
+// var chart = new ApexCharts(document.querySelector("#chart"), options);
+// chart.render();

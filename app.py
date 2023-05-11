@@ -20,6 +20,17 @@ from flask import   Flask,              \
                     make_response,      \
                     redirect
 
+#   Dom machine learning deps
+import nltk
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+from string import punctuation
+import re
+from nltk.corpus import stopwords
+
+
 
 ############# DATABASE SETUP #############
 
@@ -112,8 +123,13 @@ def jsonagg():
     session = Session(engine)
 
     #   Query assignment
-    mock_query = session.query(mock.restaurant_id, mock.cuisine,
-                               func.avg(mock.vader_compound)).group_by(mock.restaurant_id)
+    mock_query = session.query(mock.restaurant_id, 
+                               mock.cuisine,
+                               func.avg(mock.vader_compound),
+                               func.sum(mock.vader_pos),
+                               func.sum(mock.vader_neu),
+                               func.sum(mock.vader_neg),
+                               ).group_by(mock.restaurant_id)
 
     #   Declare list
     mock_dict_list = []
@@ -128,6 +144,9 @@ def jsonagg():
         mock_dict["id"] = avg[0]
         mock_dict["cuisine"] = avg[1]
         mock_dict["vader_compound"] = avg[2]
+        mock_dict["vader_pos"] = avg[3]
+        mock_dict["vader_neu"] = avg[4]
+        mock_dict["vader_neg"] = avg[5]
    
 
         mock_dict_list.append(mock_dict)
@@ -179,6 +198,52 @@ def cuisines():
 @app.route("/test", methods = ["GET", "POST"])
 def test():
     return render_template("test.html")
+
+#####   DOM ROUTES
+
+@app.route('/dom')
+def dom():
+    return render_template('home.html')
+
+@app.route('/form')
+def my_form():
+    return render_template('form.html')
+
+@app.route('/form', methods=['POST'])
+def my_form_post():
+    stop_words = stopwords.words('english')
+    
+    #convert to lowercase
+    text1 = request.form['text1'].lower()
+    
+    text_final = ''.join(c for c in text1 if not c.isdigit())
+    
+    #remove punctuations
+    #text3 = ''.join(c for c in text2 if c not in punctuation)
+        
+    #remove stopwords    
+    processed_doc1 = ' '.join([word for word in text_final.split() if word not in stop_words])
+
+    sa = SentimentIntensityAnalyzer()
+    dd = sa.polarity_scores(text=processed_doc1)
+    compound = round((1 + dd['compound'])/2, 2)
+
+    return render_template('form.html', final=compound, text1=text_final,text2=dd['pos'],text5=dd['neg'],text4=compound,text3=dd['neu'])
+
+
+@app.route('/input-nltk-vader', methods=["GET", "POST"])
+def vader():
+    if request.method == "POST":
+        inp = request.form.get("inp")
+        sia = SentimentIntensityAnalyzer()
+        score = sia.polarity_scores(inp)
+
+        if score["neg"] != 0:
+            return render_template ('input_vader.html', message= "Negative 😵😵")
+        else:
+            return render_template('input_vader.html', message="Positive 🙂🙂")
+        
+    return render_template('input_vader.html')
 
 
 
