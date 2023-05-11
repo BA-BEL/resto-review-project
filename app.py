@@ -112,7 +112,7 @@ def jsonagg():
     session = Session(engine)
 
     #   Query assignment
-    mock_query = session.query(mock.restaurant_id, 
+    mock_query = session.query(mock.restaurant_id, mock.cuisine,
                                func.avg(mock.vader_compound)).group_by(mock.restaurant_id)
 
     #   Declare list
@@ -126,7 +126,8 @@ def jsonagg():
 
         # Assign..
         mock_dict["id"] = avg[0]
-        mock_dict["vader_compound"] = avg[1]
+        mock_dict["cuisine"] = avg[1]
+        mock_dict["vader_compound"] = avg[2]
    
 
         mock_dict_list.append(mock_dict)

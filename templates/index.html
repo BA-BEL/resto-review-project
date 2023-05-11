@@ -26,7 +26,7 @@
 <body class="p-3 mb-2 bg-dark text-white">
 
     <!-- Sidebar on click -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+    <!-- <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
         id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
@@ -36,13 +36,13 @@
             Repository</a>
         <a href="/api/all-data-json" class="w3-bar-item w3-button">API JSON</a>
         <a href="/api/geojson" class="w3-bar-item w3-button">API GEOJSON</a>
-    </nav>
+    </nav> -->
 
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-theme-d2 w3-left-align">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
-                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a> -->
 
 
             <a href="/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
@@ -51,7 +51,7 @@
 
             <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-button">Cuisines <i class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-card-4 w3-bar-block" id = "Cuisine-dropdown">
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" id="Cuisine-dropdown">
 
 
 
@@ -71,17 +71,25 @@
             <hr>
         </div>
 
-        <div class="w3-panel w3-light-grey">
-            <p>This is where we will do stuff. Wow!</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="container">
+            <div class="w3-panel w3-light-grey" id="info">
+                <p>This is where we will do stuff. Wow!</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
+            </div>
         </div>
 
+        <div class="container" id = "cuisine-type">
+            <hr>
+            <h3>Any</h3>
+            <hr>
+        </div>
+        
         <!-- This container will be filled by D3 -->
         <div class="container">
             <div id="restofiller">
