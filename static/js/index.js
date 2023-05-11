@@ -24,11 +24,6 @@ function init() {
         //  Declare DOM objects
         let resto;
 
-        //  option objects for apex plot
-        var options;
-        let pos;
-        let neu;
-        let neg;
 
         //  D3 iteration through json to print out results
         for (let i = 0; i < data.length; i++) {
@@ -44,81 +39,9 @@ function init() {
             // Restaurant score
             resto.append("p").text(`Vader Compound: ${data[i]["vader_compound"]}`);
 
+            // Plot ML scores
             resto.append("div").attr("id", `Chart-${data[i]["id"]}`)
-
-
-            // assign scores
-            pos = data[i]["vader_pos"];
-            neu = data[i]["vader_neu"];
-            neg = data[i]["vader_neg"];
-
-            options = {
-                series: [{
-                    name: 'Positive',
-                    data: [pos]
-                },
-                {
-                    name: 'Neutral',
-                    data: [neg]
-                },
-                {
-                    name: 'Negative',
-                    data: [neg]
-                }],
-                chart: {
-                    type: 'bar',
-                    height: 100,
-                    stacked: true,
-                    stackType: '100%'
-                },
-                plotOptions: {
-                    bar: {
-                        horizontal: true,
-                    },
-                },
-                stroke: {
-                    width: 1,
-                    colors: ['#fff']
-                },
-                title: {
-                    // text: '100% Stacked Bar'
-                },
-                xaxis: {
-                    labels: {
-                        show: false
-                    }
-
-                },
-                yaxis: {
-                    labels: {
-                        show: false
-                    }
-                },
-                tooltip: {
-                    y: {
-                        formatter: function (val) {
-                            // return Math.round(val*100,2) + "%"
-                            return "idk what to put here; depends on what final data looks like"
-                        }
-                    }
-                },
-                fill: {
-                    opacity: 1
-
-                },
-                legend: {
-                    show: false,
-                    position: 'top',
-                    horizontalAlign: 'left',
-                    offsetX: 40
-                },
-                toolbar:{
-                    show:false
-                }
-            };
-
-            var chart = new ApexCharts(document.querySelector(`#Chart-${data[i]["id"]}`), options);
-            chart.render();
+            plotter(data[i])
 
         }
 
@@ -210,6 +133,10 @@ function onClick(value) {
 
                 // Restaurant score
                 resto.append("p").text(`Vader Compound: ${data[i]["vader_compound"]}`);
+                resto.append("div").attr("id", `Chart-${data[i]["id"]}`)
+
+
+                plotter(data[i]);
             }
             else { }
         }
@@ -223,6 +150,88 @@ function onClick(value) {
 
     // d3.json(mock_url)
 
+
+}
+
+function plotter(data) {
+
+    //  option objects for apex plot
+    var options;
+    let pos;
+    let neu;
+    let neg;
+
+    pos = data["vader_pos"];
+    neu = data["vader_neu"];
+    neg = data["vader_neg"];
+
+    options = {
+        series: [{
+            name: 'Positive',
+            data: [pos]
+        },
+        {
+            name: 'Neutral',
+            data: [neu]
+        },
+        {
+            name: 'Negative',
+            data: [neg]
+        }],
+        chart: {
+            type: 'bar',
+            height: 100,
+            stacked: true,
+            stackType: '100%'
+        },
+        plotOptions: {
+            bar: {
+                horizontal: true,
+            },
+        },
+        stroke: {
+            width: 1,
+            colors: ['#fff']
+        },
+        title: {
+            // text: '100% Stacked Bar'
+        },
+        xaxis: {
+            labels: {
+                show: false
+            }
+
+        },
+        yaxis: {
+            labels: {
+                show: false
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    // return Math.round(val*100,2) + "%"
+                    return "idk what to put here; depends on what final data looks like"
+                }
+            }
+        },
+        fill: {
+            opacity: 1
+
+        },
+        legend: {
+            show: false,
+            position: 'top',
+            horizontalAlign: 'left',
+            offsetX: 40
+        },
+        toolbar: {
+            show: false
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector(`#Chart-${data["id"]}`), options);
+    chart.render();
 
 }
 
