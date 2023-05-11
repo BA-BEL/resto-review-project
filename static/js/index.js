@@ -240,7 +240,11 @@ function plotter(data) {
 init();
 
 
+/////// ChatGPT solution for scrolling issue
 
+// JavaScript code to scroll to the bottom of the scrollable container
+// var scrollContainer = document.getElementById('scrollContainer');
+// scrollContainer.scrollTop = scrollContainer.scrollHeight - scrollContainer.clientHeight;
 
 
 //// Test D3 Functionality
