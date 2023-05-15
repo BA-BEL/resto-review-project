@@ -10,6 +10,7 @@ const cuisine_url = "http://127.0.0.1:8000/stats_response/cuisines"
 /////// Functions
 
 //  Initializer
+
 function init() {
 
     //  Fill out site with restaurant data
@@ -39,7 +40,7 @@ function init() {
             resto.append("em").text(`${data[i]["cuisine"]}`)
             // Restaurant Address
             resto.append("p").text(`${data[i]["address"]}`)
-            
+
 
 
             // Restaurant score
@@ -54,27 +55,6 @@ function init() {
 
     });
 
-    // //  fill dropdown menu
-    // d3.json(mock_cuisine_url).then((data) => {
-
-    //     // Print test log
-    //     console.log(data);
-
-    //     // Declare and assign DOM objects
-    //     let cuisine_filler = d3.select("#Cuisine-dropdown");
-    //     let option;
-
-    //     // D3 iteration Iteration
-    //     for (let i = 0; i < data.length; i++) {
-
-    //         option = cuisine_filler.append("a");
-    //         option_value = option.attr("href", `/cuisines/${data[i]["cuisine"]}`);
-    //         option_class = option.attr("class", "w3-bar-item w3-button");
-    //         option_text = option.text(data[i]["cuisine"]);
-
-    //     }
-
-    // });
 
 
     //  fill dropdown menu
@@ -134,19 +114,19 @@ function onClick(value) {
                 resto_id = resto.attr("class", "w3-panel w3-light-grey");
 
 
-            // Restaurant Name 
-            resto.append("h4").text(`${data[i]["name"]}`);
-            // Restaurant Address
-            resto.append("p").text(`${data[i]["address"]}`)
+                // Restaurant Name 
+                resto.append("h4").text(`${data[i]["name"]}`);
+                // Restaurant Address
+                resto.append("p").text(`${data[i]["address"]}`)
 
 
 
-            // Restaurant score
-            resto.append("p").text(`Total reviews: ${data[i]["total"]}`);
+                // Restaurant score
+                resto.append("p").text(`Total reviews: ${data[i]["total"]}`);
 
-            // Plot ML scores
-            resto.append("div").attr("id", `Chart-${data[i]["restaurant_ids"]}`)
-            plotter(data[i])
+                // Plot ML scores
+                resto.append("div").attr("id", `Chart-${data[i]["restaurant_ids"]}`)
+                plotter(data[i])
 
             }
             else { }
@@ -230,7 +210,7 @@ function plotter(data) {
             opacity: 1,
             colors: ["#61D684", "#D4D661", "#D66161"]
             // colors: ["#61FC90", "#F9FC61", "#DF2E08"]
-            
+
 
         },
         legend: {
@@ -251,8 +231,10 @@ function plotter(data) {
 
 
 ////////  Call functions
-
 init();
+
+
+
 
 
 /////// ChatGPT solution for scrolling issue

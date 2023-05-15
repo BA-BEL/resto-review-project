@@ -206,7 +206,7 @@ def stats():
                         reviews.negative_count,
                         reviews.positive_percentage,
                         reviews.neutral_percentage,
-                        reviews.negative_percentage)
+                        reviews.negative_percentage).order_by(reviews.positive_percentage.desc())
 
     json_list = []
 
