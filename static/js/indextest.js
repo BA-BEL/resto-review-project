@@ -82,8 +82,7 @@ function onClick(value) {
                 plotter(data[i])
 
             }
-            //  Replace cuisine type header
-            d3.select("#cuisine-type").select("h3").text(`${value}:`)
+
 
         });
 
@@ -127,9 +126,9 @@ function onClick(value) {
 
                 }
                 else { }
-                //  Replace cuisine type header
-                d3.select("#cuisine-type").select("h3").text(`${value}:`)
             }
+            //  Replace cuisine type header
+            d3.select("#cuisine-type").select("h3").text(`${value}:`)
         });
     }
 

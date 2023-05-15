@@ -9,11 +9,14 @@
     .stock-logo {
 
         width: 10%;
-        margin-left:-30%;
-        margin-top:-2%;
+        margin-left: -25%;
+        margin-top: 15%;
 
     }
 
+    .rounded{
+        border-radius: 10px;
+    }
 </style>
 
 <html lang="en">
@@ -58,57 +61,62 @@
 
 
 
-        <div class="scroll">
+        <!-- <div class="scroll"> -->
 
+            <div class="row">
+                <div class="col-md-4">
 
-            <div class="container">
-                <hr>
-                <div class="row">
-                    <div class="col-md-5">
-                        <h1> Review Revolution! </h1>
+                    <div class="container">
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h1> Review Revolution! </h1>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4719/4719277.png" alt=""
+                                    class="img-fluid stock-logo">
+                            </div>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="col-md-7">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4719/4719277.png" alt=""
-                            class="img-fluid stock-logo">
+
+                    <div class="container">
+                        <div class="w3-panel w3-light-grey" id="info">
+                            <p>This is where we will do stuff. Wow!</p>
+                            <br>
+
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <hr>
-            </div>
-
-            <div class="container">
-                <div class="w3-panel w3-light-grey" id="info">
-                    <p>This is where we will do stuff. Wow!</p>
-                    <br>
-
-                    <br>
-                </div>
 
 
-
-
-            </div>
-
-            <div class="container" id="cuisine-type">
-                <hr>
-                <h3>Select a Cuisine</h3>
-                <hr>
-
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-button">Cuisines <i class="fa fa-caret-down"></i></button>
-                    <div class="w3-dropdown-content w3-card-4 w3-bar-block" id="Cuisine-dropdown" style = "overflow-y:auto;max-height:1000%">
-                    </div>
                 </div>
 
+
+                
+                <div class="container col-md-8" id="cuisine-type">
+                    <hr>
+                    <h3>Select a Cuisine</h3>
+                    <hr>
+                    
+                    <div class="w3-dropdown-hover w3-hide-small">
+                        <button class="w3-button">Cuisines <i class="fa fa-caret-down"></i></button>
+                        <div class="w3-dropdown-content w3-card-4 w3-bar-block" id="Cuisine-dropdown"
+                        style="overflow-y:auto;max-height:1000%">
+                    </div>
+                </div>
+                
                 <!-- This container will be filled by D3 -->
-                <div class="container">
+                <div class="container scroll">
                     <div id="restofiller">
                     </div>
-
+                    
                 </div>
-
+                
             </div>
             <div id="d3tester"></div>
-
+            
+        <!-- </div> -->
 
             <!-- Dependencies -->
 
@@ -121,6 +129,7 @@
 
             <!-- Local JS -->
             <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+            <!-- <script src="{{ url_for('static', filename='js/indextest.js') }}"></script> -->
             <!-- <script src = "../static/js/index.js"></script> -->
 </body>
 
