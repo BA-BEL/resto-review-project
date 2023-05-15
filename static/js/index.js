@@ -36,7 +36,7 @@ function init() {
             // Restaurant Name 
             resto.append("h4").text(`${data[i]["name"]}`);
             // Restaurant Cuisine
-            resto.append("p").text(`${data[i]["cuisine"]}`)
+            resto.append("em").text(`${data[i]["cuisine"]}`)
             // Restaurant Address
             resto.append("p").text(`${data[i]["address"]}`)
             
