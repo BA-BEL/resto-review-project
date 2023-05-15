@@ -42,6 +42,15 @@ Base.prepare(engine, reflect = True)
 #   Store tables into variables
 mock = Base.classes.mock
 
+engine1 = create_engine("sqlite:///data/restaurant_db.sqlite")
+Base1 = automap_base()
+Base1.prepare(engine1, reflect = True)
+
+#   Store tables into variables
+data = Base1.classes.keys()
+
+reviews = Base1.classes.reviews_agg
+details = Base1.classes.restaurants
 
 
 
@@ -193,6 +202,61 @@ def cuisines():
 
     return response
 
+#   TEST ROUTE FOR JSON STATS
+@app.route("/stats_response", methods = ["GET"])
+def stats():
+    
+    session = Session(engine1)
+
+    scores = session.query(reviews.name,
+                        reviews.restaurant_ids,
+                        reviews.cuisine,
+                        reviews.total,
+                        reviews.positive_count,
+                        reviews.neutral_count,
+                        reviews.negative_count,
+                        reviews.positive_percentage,
+                        reviews.neutral_percentage,
+                        reviews.negative_percentage)
+
+    json_list = []
+
+    for item in scores:
+
+        data = {}
+
+        data['name'] = item[0]
+        data['restaurant_ids'] = item[1]
+        data['cuisine'] = item[2]
+        data['total'] = item[3]
+        data['positive_count'] = item[4]
+        data['neutral_count'] = item[5]
+        data['negative_count'] = item[6] 
+        data['positive_percentage'] = item[7]
+        data['neutral_percentage'] = item[8]
+        data['negative_percentage'] = item[9]
+
+        
+        restaurant = session.query(details).get(item[1])
+
+        # assign the values from the restaurant object to the dictionary
+        data['price_level'] = str(restaurant.price_level).replace('(','').replace(')',''),
+        data['address'] = restaurant.address.replace("')",''),
+        data['latitude'] = str(restaurant.lat).replace('[','').replace(']',''),
+        data['longitude'] = str(restaurant.long).replace('[','')
+    
+        json_list.append(data)
+    
+    response = jsonify(json_list)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+
+    session.close()
+    
+    return response
+
+@app.route("/stats", methods = ["GET", "POST"])
+def map():
+    return render_template("stats.html")
 
 #   TEST ROUTE FOR POST METHODS
 @app.route("/test", methods = ["GET", "POST"])
@@ -244,6 +308,7 @@ def vader():
             return render_template('input_vader.html', message="Positive 🙂🙂")
         
     return render_template('input_vader.html')
+
 
 
 

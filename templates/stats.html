@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurants - Stats and Data</title>
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS from w3schools -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Reference .js file-->
+    <script src="stats.js"></script>
+    <!--Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <style>
+        .w3-top {
+            z-index: 9999;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="w3-top">
+        <!-- your navigation bar here -->
+    <!-- Navbar -->
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+
+            <a href="/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+            <a href="/test" class="w3-bar-item w3-button w3-hide-small w3-hover-white">test</a>
+            <a href="/stats" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Locations</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" style="height: 500px"></div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well" style="text-align: center">
+                <h6>Cuisine Type</h6>
+                <select id="selCuisine"></select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="well" style="text-align: center">
+                <h6>Filter By</h6>
+                <select id="selFilter"></select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="stacked" style="height: 370px; width: 100%;"></div>
+           
+        </div>
+    </div>
+    <!-- Canvas.js-->
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+    <!-- D3, Bootstrap, Plotly, Chart.js, w3css, and your stats.js file references here -->
+
+    <!-- Leaflet JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <script>
+        var map = L.map('map', { center: [-37.8136, 144.9631], zoom: 16, zoomControl: false });
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    </script>
+
+    <!-- Our JavaScript file -->
+    <script src="{{ url_for('static', filename='js/stats.js') }}"></script>
+
+    <!-- End of your HTML body -->
+</body>
+
+
+</html>
