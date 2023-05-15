@@ -7,35 +7,14 @@ const page = "http://127.0.0.1:8000/stats"
 
 /////// Functions
 
-var redIcon = L.icon({
-    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+var icon = L.icon({
+    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
     iconSize: [25, 40],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
     });
-    var orangeIcon = L.icon({
-    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
-    iconSize: [25, 40],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-    });
-    var yellowIcon = L.icon({
-    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
-    iconSize: [25, 40],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-    });
-    var greenIcon = L.icon({
-    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-    iconSize: [25, 40],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-    });
-
+    
 //  Initializer
 function init() {
 
@@ -148,18 +127,20 @@ function init() {
         clearMarkers();
 
         for (let i = 0; i < top10Restaurants.length; i++) {
-
+            let dollar;
             if (top10Restaurants[i].price_level[0]=== '1'){
-                icon = greenIcon;
+                dollar = "$";
             } else if (top10Restaurants[i].price_level[0]=== '2'){
-                icon = yellowIcon;
+                dollar = "$$";
             } else if (top10Restaurants[i].price_level[0]=== '3'){
-                icon = orangeIcon;
+                dollar = "$$$";
+            } else if (top10Restaurants[i].price_level[0]=== '4'){
+                dollar = "$$$$";
             } else {
-                icon = redIcon;
+                dollar = "$$$$$";
             }
 
-
+        
             let newMarker;
             newMarker = L.marker([parseFloat(top10Restaurants[i].latitude[0]), parseFloat(top10Restaurants[i].longitude)]);
             newMarker.setIcon(icon);
@@ -181,8 +162,9 @@ function init() {
             });
             
             newMarker.addTo(map); // add the marker to the map
-            newMarker.bindPopup("<strong>" + top10Restaurants[i]['name'] + "</strong>" + "<br>" + "<em>" + top10Restaurants[i]['address'] + "</em>" + "<br> Positive: " + "<b>" + top10Restaurants[i]['positive_percentage']+"%" + "</b>" + "<br> Neutral: " + "<b>" + top10Restaurants[i]['neutral_percentage']+"%" + "</b>" + "<br> Negative: " + "<b>" + top10Restaurants[i]['negative_percentage']+"%" + "</b>");
-          }
+            newMarker.bindPopup("<strong>" + top10Restaurants[i]['name'] + " ("+ dollar + ")" +"</strong>" + "<br>" + "<em>" + top10Restaurants[i]['address'] + "</em>" + "</br>"+  "<br> Total Reviews Analysed: " + "<b>" + top10Restaurants[i]['total'] + "</b>" + "<br> Positive: " + "<b>" + top10Restaurants[i]['positive_percentage']+"% (" + top10Restaurants[i]['positive_count'] + ")</b>" + "<br> Neutral: " + "<b>" + top10Restaurants[i]['neutral_percentage']+"% (" + top10Restaurants[i]['neutral_count'] + ")</b>" + "<br> Negative: " + "<b>" + top10Restaurants[i]['negative_percentage']+"% (" + top10Restaurants[i]['negative_count'] + ")</b>");
+
+        }
 
             // Calculate the average percentages
             const totalRestaurants = top10Restaurants.length;
@@ -221,14 +203,14 @@ function init() {
                 toolTipContent: "{label}<br><b>{name}:</b> {y} (#percent%)",
                 showInLegend: true, 
                 name: "Negative",
-                dataPoints: [{ y: neg, label: "Reviews" }]},
+                dataPoints: [{ y: neg, label: "Reviews", indexLabel: "Negative", indexLabelPlacement: "inside", indexLabelFontColor: "black" }]},
 
                 {color: "yellow",
                 type: "stackedBar100",
                 toolTipContent: "{label}<br><b>{name}:</b> {y} (#percent%)",
                 showInLegend: true, 
                 name: "Neutral",
-                dataPoints: [{ y: neu, label: "Reviews" }]},
+                dataPoints: [{ y: neu, label: "Reviews", indexLabel: "Neutral", indexLabelPlacement: "inside", indexLabelFontColor: "black"  }]},
 
 
                 {color: "green",
@@ -236,7 +218,7 @@ function init() {
                 toolTipContent: "{label}<br><b>{name}:</b> {y} (#percent%)",
                 showInLegend: true, 
                 name: "Positive",
-                dataPoints: [{ y: pos, label: "Reviews" }]}
+                dataPoints: [{ y: pos, label: "Reviews", indexLabel: "Positive", indexLabelPlacement: "inside", indexLabelFontColor: "black"  }]}
             
             ]
             });
