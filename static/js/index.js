@@ -227,8 +227,10 @@ function plotter(data) {
             }
         },
         fill: {
-            // opacity: 1,
-            colors: ["61FC90", "F9FC61", "DF2E08"]
+            opacity: 1,
+            colors: ["#61D684", "#D4D661", "#D66161"]
+            // colors: ["#61FC90", "#F9FC61", "#DF2E08"]
+            
 
         },
         legend: {
