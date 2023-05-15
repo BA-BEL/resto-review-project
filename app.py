@@ -159,7 +159,7 @@ def jsonagg():
 
 #   MOCK DATA ENDPOINT FOR CUISINES (i.e. unique)
 @app.route("/api/v1.0/jsonrefresher/cuisines")
-def cuisines():
+def mock_cuisines():
     
     #   Start session
     session = Session(engine)
@@ -241,6 +241,41 @@ def stats():
 
     session.close()
     
+    return response
+
+
+#   DATA ENDPOINT FOR CUISINES (i.e. unique)
+@app.route("/stats_response/cuisines")
+def cuisines():
+    
+    #   Start session
+    session = Session(engine1)
+
+    #   Query assignment
+    query = session.query(reviews.cuisine, 
+                               func.count(reviews.restaurant_ids)).group_by(reviews.cuisine)
+
+    #   Declare list
+    cuisine_dict_list = []
+
+    #   Iterate through query
+    for cuis in query:
+
+        # Declare dictionary that will be appended to above list
+        cuisine_dict = {}
+
+        # Assign..
+        cuisine_dict["cuisine"] = cuis[0]
+        cuisine_dict["count"] = cuis[1]
+   
+
+        cuisine_dict_list.append(cuisine_dict)
+    
+    response = jsonify(cuisine_dict_list)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+
+    session.close()
+
     return response
 
 @app.route("/stats", methods = ["GET", "POST"])

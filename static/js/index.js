@@ -1,9 +1,11 @@
 
 ////////  Endpoint declarations
 
-//  Mock data and cuisine endpoints
-const mock_url = "http://127.0.0.1:8000/api/v1.0/jsonrefresher/agg";
-const mock_cuisine_url = "http://127.0.0.1:8000/api/v1.0/jsonrefresher/cuisines"
+//  Json restaurant and cuisine endpoints
+const url = "http://127.0.0.1:8000/stats_response";
+const cuisine_url = "http://127.0.0.1:8000/stats_response/cuisines"
+
+
 
 /////// Functions
 
@@ -11,7 +13,7 @@ const mock_cuisine_url = "http://127.0.0.1:8000/api/v1.0/jsonrefresher/cuisines"
 function init() {
 
     //  Fill out site with restaurant data
-    d3.json(mock_url).then((data) => {
+    d3.json(url).then((data) => {
 
 
         // // Print test log
@@ -31,15 +33,20 @@ function init() {
             resto_id = resto.attr("class", "w3-panel w3-light-grey");
 
 
-            // Restaurant Name etc.
-            // below is restaurant_id, placeholder might need to be replaced
-            resto.append("p").text(`Restaurant: ${data[i]["id"]}`);
+            // Restaurant Name 
+            resto.append("h4").text(`${data[i]["name"]}`);
+            // Restaurant Cuisine
+            resto.append("p").text(`${data[i]["cuisine"]}`)
+            // Restaurant Address
+            resto.append("p").text(`${data[i]["address"]}`)
+            
+
 
             // Restaurant score
-            resto.append("p").text(`Vader Compound: ${data[i]["vader_compound"]}`);
+            resto.append("p").text(`Total reviews: ${data[i]["total"]}`);
 
             // Plot ML scores
-            resto.append("div").attr("id", `Chart-${data[i]["id"]}`)
+            resto.append("div").attr("id", `Chart-${data[i]["restaurant_ids"]}`)
             plotter(data[i])
 
         }
@@ -71,7 +78,7 @@ function init() {
 
 
     //  fill dropdown menu
-    d3.json(mock_cuisine_url).then((data) => {
+    d3.json(cuisine_url).then((data) => {
 
         // Print test log
         console.log(data);
@@ -93,7 +100,7 @@ function init() {
 
     });
 
-<<<<<<< HEAD
+
 }
 
 // dropdown menu onClick action
@@ -107,7 +114,7 @@ function onClick(value) {
     d3.select("#cuisine-type").select("h3").text(`${value}:`)
 
     //  Fill out site with restaurant data
-    d3.json(mock_url).then((data) => {
+    d3.json(url).then((data) => {
 
 
         // // Print test log
@@ -127,16 +134,20 @@ function onClick(value) {
                 resto_id = resto.attr("class", "w3-panel w3-light-grey");
 
 
-                // Restaurant Name etc.
-                // below is restaurant_id, placeholder might need to be replaced
-                resto.append("p").text(`Restaurant: ${data[i]["id"]}`);
-
-                // Restaurant score
-                resto.append("p").text(`Vader Compound: ${data[i]["vader_compound"]}`);
-                resto.append("div").attr("id", `Chart-${data[i]["id"]}`)
+            // Restaurant Name 
+            resto.append("h4").text(`${data[i]["name"]}`);
+            // Restaurant Address
+            resto.append("p").text(`${data[i]["address"]}`)
 
 
-                plotter(data[i]);
+
+            // Restaurant score
+            resto.append("p").text(`Total reviews: ${data[i]["total"]}`);
+
+            // Plot ML scores
+            resto.append("div").attr("id", `Chart-${data[i]["restaurant_ids"]}`)
+            plotter(data[i])
+
             }
             else { }
         }
@@ -161,9 +172,9 @@ function plotter(data) {
     let neu;
     let neg;
 
-    pos = data["vader_pos"];
-    neu = data["vader_neu"];
-    neg = data["vader_neg"];
+    pos = data["positive_count"];
+    neu = data["neutral_count"];
+    neg = data["negative_count"];
 
     options = {
         series: [{
@@ -216,7 +227,8 @@ function plotter(data) {
             }
         },
         fill: {
-            opacity: 1
+            // opacity: 1,
+            colors: ["61FC90", "F9FC61", "DF2E08"]
 
         },
         legend: {
@@ -230,13 +242,12 @@ function plotter(data) {
         }
     };
 
-    var chart = new ApexCharts(document.querySelector(`#Chart-${data["id"]}`), options);
+    var chart = new ApexCharts(document.querySelector(`#Chart-${data["restaurant_ids"]}`), options);
     chart.render();
 
 }
 
-=======
->>>>>>> origin/josh
+
 ////////  Call functions
 
 init();
