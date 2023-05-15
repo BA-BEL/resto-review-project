@@ -5,7 +5,6 @@
 const mock_url = "http://127.0.0.1:8000/api/v1.0/jsonrefresher/agg";
 const mock_cuisine_url = "http://127.0.0.1:8000/api/v1.0/jsonrefresher/cuisines"
 
-
 /////// Functions
 
 //  Initializer
@@ -63,9 +62,6 @@ function init() {
         }
 
     });
-
-}
-
 
 ////////  Call functions
 
