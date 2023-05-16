@@ -194,7 +194,7 @@ function plotter(data) {
             y: {
                 formatter: function (val) {
                     // return Math.round(val*100,2) + "%"
-                    return "idk what to put here; depends on what final data looks like"
+                    return ""
                 }
             }
         },
